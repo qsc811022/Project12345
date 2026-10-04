@@ -1,0 +1,1127 @@
+[
+  {
+    "id": "alphabet-q-1",
+    "bank": "alphabet",
+    "prompt": "哪個字母在音節開頭不發音？",
+    "options": [
+      {
+        "id": "alphabet-q-1-o-1",
+        "text": "ㅇ"
+      },
+      {
+        "id": "alphabet-q-1-o-2",
+        "text": "ㄱ"
+      },
+      {
+        "id": "alphabet-q-1-o-3",
+        "text": "ㅁ"
+      },
+      {
+        "id": "alphabet-q-1-o-4",
+        "text": "ㅎ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-1-o-1",
+    "explanation": "ㅇ 在初聲位置不發音，但作收音時發舌根鼻音。"
+  },
+  {
+    "id": "alphabet-q-2",
+    "bank": "alphabet",
+    "prompt": "「가」由哪些字母組成？",
+    "options": [
+      {
+        "id": "alphabet-q-2-o-1",
+        "text": "ㄱ + ㅏ"
+      },
+      {
+        "id": "alphabet-q-2-o-2",
+        "text": "ㄴ + ㅏ"
+      },
+      {
+        "id": "alphabet-q-2-o-3",
+        "text": "ㄱ + ㅓ"
+      },
+      {
+        "id": "alphabet-q-2-o-4",
+        "text": "ㅋ + ㅗ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-2-o-1",
+    "explanation": "가 是 ㄱ 和直向母音 ㅏ 的組合。"
+  },
+  {
+    "id": "alphabet-q-3",
+    "bank": "alphabet",
+    "prompt": "哪個是基本母音？",
+    "options": [
+      {
+        "id": "alphabet-q-3-o-1",
+        "text": "ㅏ"
+      },
+      {
+        "id": "alphabet-q-3-o-2",
+        "text": "ㄱ"
+      },
+      {
+        "id": "alphabet-q-3-o-3",
+        "text": "ㄴ"
+      },
+      {
+        "id": "alphabet-q-3-o-4",
+        "text": "ㅁ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-3-o-1",
+    "explanation": "ㅏ 是母音，其餘三個為子音。"
+  },
+  {
+    "id": "alphabet-q-4",
+    "bank": "alphabet",
+    "prompt": "哪個是緊音子音？",
+    "options": [
+      {
+        "id": "alphabet-q-4-o-1",
+        "text": "ㄲ"
+      },
+      {
+        "id": "alphabet-q-4-o-2",
+        "text": "ㅋ"
+      },
+      {
+        "id": "alphabet-q-4-o-3",
+        "text": "ㄱ"
+      },
+      {
+        "id": "alphabet-q-4-o-4",
+        "text": "ㅎ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-4-o-1",
+    "explanation": "ㄲ 是緊音；ㅋ 為送氣音，與發音的緊度不同。"
+  },
+  {
+    "id": "alphabet-q-5",
+    "bank": "alphabet",
+    "prompt": "「한」的收音是什麼？",
+    "options": [
+      {
+        "id": "alphabet-q-5-o-1",
+        "text": "ㄴ"
+      },
+      {
+        "id": "alphabet-q-5-o-2",
+        "text": "ㅎ"
+      },
+      {
+        "id": "alphabet-q-5-o-3",
+        "text": "ㅏ"
+      },
+      {
+        "id": "alphabet-q-5-o-4",
+        "text": "ㅇ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-5-o-1",
+    "explanation": "한 由 ㅎ、ㅏ、ㄴ 組成，最下方的 ㄴ 是收音。"
+  },
+  {
+    "id": "alphabet-q-6",
+    "bank": "alphabet",
+    "prompt": "基本子音共有幾個？",
+    "options": [
+      {
+        "id": "alphabet-q-6-o-1",
+        "text": "14"
+      },
+      {
+        "id": "alphabet-q-6-o-2",
+        "text": "10"
+      },
+      {
+        "id": "alphabet-q-6-o-3",
+        "text": "5"
+      },
+      {
+        "id": "alphabet-q-6-o-4",
+        "text": "21"
+      }
+    ],
+    "correctOptionId": "alphabet-q-6-o-1",
+    "explanation": "這套教材將子音分為 14 個基本子音與 5 個緊音子音。"
+  },
+  {
+    "id": "alphabet-q-7",
+    "bank": "alphabet",
+    "prompt": "基本母音共有幾個？",
+    "options": [
+      {
+        "id": "alphabet-q-7-o-1",
+        "text": "10"
+      },
+      {
+        "id": "alphabet-q-7-o-2",
+        "text": "14"
+      },
+      {
+        "id": "alphabet-q-7-o-3",
+        "text": "5"
+      },
+      {
+        "id": "alphabet-q-7-o-4",
+        "text": "19"
+      }
+    ],
+    "correctOptionId": "alphabet-q-7-o-1",
+    "explanation": "基本母音為 ㅏ、ㅑ、ㅓ、ㅕ、ㅗ、ㅛ、ㅜ、ㅠ、ㅡ、ㅣ。"
+  },
+  {
+    "id": "alphabet-q-8",
+    "bank": "alphabet",
+    "prompt": "「고」的母音是哪個？",
+    "options": [
+      {
+        "id": "alphabet-q-8-o-1",
+        "text": "ㅗ"
+      },
+      {
+        "id": "alphabet-q-8-o-2",
+        "text": "ㅜ"
+      },
+      {
+        "id": "alphabet-q-8-o-3",
+        "text": "ㅏ"
+      },
+      {
+        "id": "alphabet-q-8-o-4",
+        "text": "ㅓ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-8-o-1",
+    "explanation": "고 由 ㄱ 與橫向母音 ㅗ 組成。"
+  },
+  {
+    "id": "alphabet-q-9",
+    "bank": "alphabet",
+    "prompt": "哪個字母是 ㅂ 對應的送氣音？",
+    "options": [
+      {
+        "id": "alphabet-q-9-o-1",
+        "text": "ㅍ"
+      },
+      {
+        "id": "alphabet-q-9-o-2",
+        "text": "ㅃ"
+      },
+      {
+        "id": "alphabet-q-9-o-3",
+        "text": "ㅁ"
+      },
+      {
+        "id": "alphabet-q-9-o-4",
+        "text": "ㄷ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-9-o-1",
+    "explanation": "ㅍ 與 ㅂ 發音位置相近，放開雙唇時氣流更強。"
+  },
+  {
+    "id": "alphabet-q-10",
+    "bank": "alphabet",
+    "prompt": "「아」開頭為什麼要寫 ㅇ？",
+    "options": [
+      {
+        "id": "alphabet-q-10-o-1",
+        "text": "在初聲位置占位"
+      },
+      {
+        "id": "alphabet-q-10-o-2",
+        "text": "表示收音"
+      },
+      {
+        "id": "alphabet-q-10-o-3",
+        "text": "讓母音變成緊音"
+      },
+      {
+        "id": "alphabet-q-10-o-4",
+        "text": "表示重音"
+      }
+    ],
+    "correctOptionId": "alphabet-q-10-o-1",
+    "explanation": "韓文字以音節組合；只有母音聲音時，初聲使用不發音的 ㅇ。"
+  },
+  {
+    "id": "alphabet-q-11",
+    "bank": "alphabet",
+    "prompt": "「과」中的母音是哪個？",
+    "options": [
+      {
+        "id": "alphabet-q-11-o-1",
+        "text": "ㅘ"
+      },
+      {
+        "id": "alphabet-q-11-o-2",
+        "text": "ㅝ"
+      },
+      {
+        "id": "alphabet-q-11-o-3",
+        "text": "ㅙ"
+      },
+      {
+        "id": "alphabet-q-11-o-4",
+        "text": "ㅚ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-11-o-1",
+    "explanation": "과 = ㄱ + ㅘ；ㅘ 的字形結合 ㅗ 與 ㅏ。"
+  },
+  {
+    "id": "alphabet-q-12",
+    "bank": "alphabet",
+    "prompt": "哪個字的母音位於子音下方？",
+    "options": [
+      {
+        "id": "alphabet-q-12-o-1",
+        "text": "고"
+      },
+      {
+        "id": "alphabet-q-12-o-2",
+        "text": "가"
+      },
+      {
+        "id": "alphabet-q-12-o-3",
+        "text": "너"
+      },
+      {
+        "id": "alphabet-q-12-o-4",
+        "text": "미"
+      }
+    ],
+    "correctOptionId": "alphabet-q-12-o-1",
+    "explanation": "ㅗ 為橫向母音，因此在 고 中排列於 ㄱ 下方。"
+  },
+  {
+    "id": "alphabet-q-13",
+    "bank": "alphabet",
+    "prompt": "哪個字母是 ㄷ 對應的緊音？",
+    "options": [
+      {
+        "id": "alphabet-q-13-o-1",
+        "text": "ㄸ"
+      },
+      {
+        "id": "alphabet-q-13-o-2",
+        "text": "ㅌ"
+      },
+      {
+        "id": "alphabet-q-13-o-3",
+        "text": "ㄴ"
+      },
+      {
+        "id": "alphabet-q-13-o-4",
+        "text": "ㅊ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-13-o-1",
+    "explanation": "ㄸ 是緊音，ㅌ 則是送氣音。"
+  },
+  {
+    "id": "alphabet-q-14",
+    "bank": "alphabet",
+    "prompt": "「밥」的收音是哪個？",
+    "options": [
+      {
+        "id": "alphabet-q-14-o-1",
+        "text": "ㅂ"
+      },
+      {
+        "id": "alphabet-q-14-o-2",
+        "text": "ㅏ"
+      },
+      {
+        "id": "alphabet-q-14-o-3",
+        "text": "ㄱ"
+      },
+      {
+        "id": "alphabet-q-14-o-4",
+        "text": "ㅍ"
+      }
+    ],
+    "correctOptionId": "alphabet-q-14-o-1",
+    "explanation": "밥 的最後一個字母 ㅂ 寫在音節底部，作為收音。"
+  },
+  {
+    "id": "alphabet-q-15",
+    "bank": "alphabet",
+    "prompt": "「아이」包含幾個音節方塊？",
+    "options": [
+      {
+        "id": "alphabet-q-15-o-1",
+        "text": "2"
+      },
+      {
+        "id": "alphabet-q-15-o-2",
+        "text": "1"
+      },
+      {
+        "id": "alphabet-q-15-o-3",
+        "text": "3"
+      },
+      {
+        "id": "alphabet-q-15-o-4",
+        "text": "4"
+      }
+    ],
+    "correctOptionId": "alphabet-q-15-o-1",
+    "explanation": "아 和 이 各是一個音節方塊，每個方塊都以 ㅇ 占初聲位置。"
+  },
+  {
+    "id": "vocabulary-q-1",
+    "bank": "vocabulary",
+    "prompt": "「안녕하세요」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-1-o-1",
+        "text": "您好"
+      },
+      {
+        "id": "vocabulary-q-1-o-2",
+        "text": "謝謝"
+      },
+      {
+        "id": "vocabulary-q-1-o-3",
+        "text": "對不起"
+      },
+      {
+        "id": "vocabulary-q-1-o-4",
+        "text": "是／好的"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-1-o-1",
+    "explanation": "안녕하세요：您好。例句：안녕하세요, 선생님.（老師您好。）"
+  },
+  {
+    "id": "vocabulary-q-2",
+    "bank": "vocabulary",
+    "prompt": "「네」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-2-o-1",
+        "text": "是／好的"
+      },
+      {
+        "id": "vocabulary-q-2-o-2",
+        "text": "對不起"
+      },
+      {
+        "id": "vocabulary-q-2-o-3",
+        "text": "不是／不"
+      },
+      {
+        "id": "vocabulary-q-2-o-4",
+        "text": "沒關係／還好"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-2-o-1",
+    "explanation": "네：是／好的。例句：네, 알겠습니다.（好的，我知道了。）"
+  },
+  {
+    "id": "vocabulary-q-3",
+    "bank": "vocabulary",
+    "prompt": "「이름」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-3-o-1",
+        "text": "名字"
+      },
+      {
+        "id": "vocabulary-q-3-o-2",
+        "text": "不是／不"
+      },
+      {
+        "id": "vocabulary-q-3-o-3",
+        "text": "沒關係／還好"
+      },
+      {
+        "id": "vocabulary-q-3-o-4",
+        "text": "朋友"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-3-o-1",
+    "explanation": "이름：名字。例句：이름이 뭐예요?（你叫什麼名字？）"
+  },
+  {
+    "id": "vocabulary-q-4",
+    "bank": "vocabulary",
+    "prompt": "「다시」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-4-o-1",
+        "text": "再／重新"
+      },
+      {
+        "id": "vocabulary-q-4-o-2",
+        "text": "名字"
+      },
+      {
+        "id": "vocabulary-q-4-o-3",
+        "text": "朋友"
+      },
+      {
+        "id": "vocabulary-q-4-o-4",
+        "text": "第一次／最初"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-4-o-1",
+    "explanation": "다시：再／重新。例句：다시 말해 주세요.（請再說一次。）"
+  },
+  {
+    "id": "vocabulary-q-5",
+    "bank": "vocabulary",
+    "prompt": "「김치」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-5-o-1",
+        "text": "泡菜"
+      },
+      {
+        "id": "vocabulary-q-5-o-2",
+        "text": "第一次／最初"
+      },
+      {
+        "id": "vocabulary-q-5-o-3",
+        "text": "再／重新"
+      },
+      {
+        "id": "vocabulary-q-5-o-4",
+        "text": "水"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-5-o-1",
+    "explanation": "김치：泡菜。例句：김치가 매워요.（泡菜很辣。）"
+  },
+  {
+    "id": "vocabulary-q-6",
+    "bank": "vocabulary",
+    "prompt": "「우유」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-6-o-1",
+        "text": "牛奶"
+      },
+      {
+        "id": "vocabulary-q-6-o-2",
+        "text": "水"
+      },
+      {
+        "id": "vocabulary-q-6-o-3",
+        "text": "飯"
+      },
+      {
+        "id": "vocabulary-q-6-o-4",
+        "text": "泡菜"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-6-o-1",
+    "explanation": "우유：牛奶。例句：우유를 사요.（我買牛奶。）"
+  },
+  {
+    "id": "vocabulary-q-7",
+    "bank": "vocabulary",
+    "prompt": "「고기」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-7-o-1",
+        "text": "肉"
+      },
+      {
+        "id": "vocabulary-q-7-o-2",
+        "text": "泡菜"
+      },
+      {
+        "id": "vocabulary-q-7-o-3",
+        "text": "咖啡"
+      },
+      {
+        "id": "vocabulary-q-7-o-4",
+        "text": "茶"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-7-o-1",
+    "explanation": "고기：肉。例句：고기를 좋아해요.（我喜歡吃肉。）"
+  },
+  {
+    "id": "vocabulary-q-8",
+    "bank": "vocabulary",
+    "prompt": "「이」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-8-o-1",
+        "text": "二（漢字數字）"
+      },
+      {
+        "id": "vocabulary-q-8-o-2",
+        "text": "茶"
+      },
+      {
+        "id": "vocabulary-q-8-o-3",
+        "text": "牛奶"
+      },
+      {
+        "id": "vocabulary-q-8-o-4",
+        "text": "麵包"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-8-o-1",
+    "explanation": "이：二（漢字數字）。例句：이 더하기 이는 사예요.（二加二等於四。）"
+  },
+  {
+    "id": "vocabulary-q-9",
+    "bank": "vocabulary",
+    "prompt": "「내일」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-9-o-1",
+        "text": "明天"
+      },
+      {
+        "id": "vocabulary-q-9-o-2",
+        "text": "麵包"
+      },
+      {
+        "id": "vocabulary-q-9-o-3",
+        "text": "蘋果"
+      },
+      {
+        "id": "vocabulary-q-9-o-4",
+        "text": "肉"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-9-o-1",
+    "explanation": "내일：明天。例句：내일 만나요.（明天見。）"
+  },
+  {
+    "id": "vocabulary-q-10",
+    "bank": "vocabulary",
+    "prompt": "「시간」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-10-o-1",
+        "text": "時間／小時"
+      },
+      {
+        "id": "vocabulary-q-10-o-2",
+        "text": "肉"
+      },
+      {
+        "id": "vocabulary-q-10-o-3",
+        "text": "湯"
+      },
+      {
+        "id": "vocabulary-q-10-o-4",
+        "text": "一（漢字數字）"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-10-o-1",
+    "explanation": "시간：時間／小時。例句：시간이 있어요?（你有時間嗎？）"
+  },
+  {
+    "id": "vocabulary-q-11",
+    "bank": "vocabulary",
+    "prompt": "「역」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-11-o-1",
+        "text": "車站（鐵路）"
+      },
+      {
+        "id": "vocabulary-q-11-o-2",
+        "text": "一（漢字數字）"
+      },
+      {
+        "id": "vocabulary-q-11-o-3",
+        "text": "二（漢字數字）"
+      },
+      {
+        "id": "vocabulary-q-11-o-4",
+        "text": "三（漢字數字）"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-11-o-1",
+    "explanation": "역：車站（鐵路）。例句：역이 어디예요?（車站在哪裡？）"
+  },
+  {
+    "id": "vocabulary-q-12",
+    "bank": "vocabulary",
+    "prompt": "「택시」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-12-o-1",
+        "text": "計程車"
+      },
+      {
+        "id": "vocabulary-q-12-o-2",
+        "text": "三（漢字數字）"
+      },
+      {
+        "id": "vocabulary-q-12-o-3",
+        "text": "今天"
+      },
+      {
+        "id": "vocabulary-q-12-o-4",
+        "text": "明天"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-12-o-1",
+    "explanation": "택시：計程車。例句：택시를 타세요.（請搭計程車。）"
+  },
+  {
+    "id": "vocabulary-q-13",
+    "bank": "vocabulary",
+    "prompt": "「표」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-13-o-1",
+        "text": "票"
+      },
+      {
+        "id": "vocabulary-q-13-o-2",
+        "text": "明天"
+      },
+      {
+        "id": "vocabulary-q-13-o-3",
+        "text": "昨天"
+      },
+      {
+        "id": "vocabulary-q-13-o-4",
+        "text": "現在"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-13-o-1",
+    "explanation": "표：票。例句：표를 사요.（我買票。）"
+  },
+  {
+    "id": "vocabulary-q-14",
+    "bank": "vocabulary",
+    "prompt": "「왼쪽」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-14-o-1",
+        "text": "左邊"
+      },
+      {
+        "id": "vocabulary-q-14-o-2",
+        "text": "現在"
+      },
+      {
+        "id": "vocabulary-q-14-o-3",
+        "text": "時間／小時"
+      },
+      {
+        "id": "vocabulary-q-14-o-4",
+        "text": "早上／早餐"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-14-o-1",
+    "explanation": "왼쪽：左邊。例句：왼쪽에 있어요.（在左邊。）"
+  },
+  {
+    "id": "vocabulary-q-15",
+    "bank": "vocabulary",
+    "prompt": "「책」的意思是什麼？",
+    "options": [
+      {
+        "id": "vocabulary-q-15-o-1",
+        "text": "書"
+      },
+      {
+        "id": "vocabulary-q-15-o-2",
+        "text": "早上／早餐"
+      },
+      {
+        "id": "vocabulary-q-15-o-3",
+        "text": "傍晚／晚餐"
+      },
+      {
+        "id": "vocabulary-q-15-o-4",
+        "text": "車站（鐵路）"
+      }
+    ],
+    "correctOptionId": "vocabulary-q-15-o-1",
+    "explanation": "책：書。例句：책을 읽어요.（我讀書。）"
+  },
+  {
+    "id": "sentences-q-1",
+    "bank": "sentences",
+    "prompt": "「안녕하세요?」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-1-o-1",
+        "text": "您好。"
+      },
+      {
+        "id": "sentences-q-1-o-2",
+        "text": "很高興認識您。"
+      },
+      {
+        "id": "sentences-q-1-o-3",
+        "text": "我的名字是敏秀。"
+      },
+      {
+        "id": "sentences-q-1-o-4",
+        "text": "請做得不要辣。"
+      }
+    ],
+    "correctOptionId": "sentences-q-1-o-1",
+    "explanation": "固定問候語，可用於不熟悉的人或長輩。"
+  },
+  {
+    "id": "sentences-q-2",
+    "bank": "sentences",
+    "prompt": "「만나서 반갑습니다.」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-2-o-1",
+        "text": "很高興認識您。"
+      },
+      {
+        "id": "sentences-q-2-o-2",
+        "text": "請慢走／再見。"
+      },
+      {
+        "id": "sentences-q-2-o-3",
+        "text": "我來自台灣。"
+      },
+      {
+        "id": "sentences-q-2-o-4",
+        "text": "這個多少錢？"
+      }
+    ],
+    "correctOptionId": "sentences-q-2-o-1",
+    "explanation": "만나다（見面）接 -아서/어서 表示原因，再接 반갑습니다。"
+  },
+  {
+    "id": "sentences-q-3",
+    "bank": "sentences",
+    "prompt": "「안녕히 가세요.」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-3-o-1",
+        "text": "請慢走／再見。"
+      },
+      {
+        "id": "sentences-q-3-o-2",
+        "text": "我是學生。"
+      },
+      {
+        "id": "sentences-q-3-o-3",
+        "text": "請給我一杯水。"
+      },
+      {
+        "id": "sentences-q-3-o-4",
+        "text": "可以刷卡付款嗎？"
+      }
+    ],
+    "correctOptionId": "sentences-q-3-o-1",
+    "explanation": "對離開的人說 가세요；對留下的人則說 안녕히 계세요。"
+  },
+  {
+    "id": "sentences-q-4",
+    "bank": "sentences",
+    "prompt": "「저는 학생이에요.」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-4-o-1",
+        "text": "我是學生。"
+      },
+      {
+        "id": "sentences-q-4-o-2",
+        "text": "我的名字是敏秀。"
+      },
+      {
+        "id": "sentences-q-4-o-3",
+        "text": "請給我一個這個。"
+      },
+      {
+        "id": "sentences-q-4-o-4",
+        "text": "有再大一點的嗎？"
+      }
+    ],
+    "correctOptionId": "sentences-q-4-o-1",
+    "explanation": "저는 提出「我」作為主題；학생 有收音，接 이에요。"
+  },
+  {
+    "id": "sentences-q-5",
+    "bank": "sentences",
+    "prompt": "「제 이름은 민수예요.」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-5-o-1",
+        "text": "我的名字是敏秀。"
+      },
+      {
+        "id": "sentences-q-5-o-2",
+        "text": "我來自台灣。"
+      },
+      {
+        "id": "sentences-q-5-o-3",
+        "text": "請做得不要辣。"
+      },
+      {
+        "id": "sentences-q-5-o-4",
+        "text": "洗手間在哪裡？"
+      }
+    ],
+    "correctOptionId": "sentences-q-5-o-1",
+    "explanation": "제 是 저의 的縮寫；민수 沒有收音，接 예요。"
+  },
+  {
+    "id": "sentences-q-6",
+    "bank": "sentences",
+    "prompt": "「저는 대만에서 왔어요.」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-6-o-1",
+        "text": "我來自台灣。"
+      },
+      {
+        "id": "sentences-q-6-o-2",
+        "text": "請給我一杯水。"
+      },
+      {
+        "id": "sentences-q-6-o-3",
+        "text": "這個多少錢？"
+      },
+      {
+        "id": "sentences-q-6-o-4",
+        "text": "離這裡遠嗎？"
+      }
+    ],
+    "correctOptionId": "sentences-q-6-o-1",
+    "explanation": "地點加 에서 表示出發處；왔어요 是 오다 的過去式。"
+  },
+  {
+    "id": "sentences-q-7",
+    "bank": "sentences",
+    "prompt": "「물 한 잔 주세요.」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-7-o-1",
+        "text": "請給我一杯水。"
+      },
+      {
+        "id": "sentences-q-7-o-2",
+        "text": "請給我一個這個。"
+      },
+      {
+        "id": "sentences-q-7-o-3",
+        "text": "可以刷卡付款嗎？"
+      },
+      {
+        "id": "sentences-q-7-o-4",
+        "text": "請往右邊走。"
+      }
+    ],
+    "correctOptionId": "sentences-q-7-o-1",
+    "explanation": "한 잔 表示一杯；주세요 是禮貌的請求。"
+  },
+  {
+    "id": "sentences-q-8",
+    "bank": "sentences",
+    "prompt": "「이거 하나 주세요.」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-8-o-1",
+        "text": "請給我一個這個。"
+      },
+      {
+        "id": "sentences-q-8-o-2",
+        "text": "請做得不要辣。"
+      },
+      {
+        "id": "sentences-q-8-o-3",
+        "text": "有再大一點的嗎？"
+      },
+      {
+        "id": "sentences-q-8-o-4",
+        "text": "您好。"
+      }
+    ],
+    "correctOptionId": "sentences-q-8-o-1",
+    "explanation": "이거 是「這個」；하나 是一個，沒有接量詞時保留此形式。"
+  },
+  {
+    "id": "sentences-q-9",
+    "bank": "sentences",
+    "prompt": "「맵지 않게 해 주세요.」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-9-o-1",
+        "text": "請做得不要辣。"
+      },
+      {
+        "id": "sentences-q-9-o-2",
+        "text": "這個多少錢？"
+      },
+      {
+        "id": "sentences-q-9-o-3",
+        "text": "洗手間在哪裡？"
+      },
+      {
+        "id": "sentences-q-9-o-4",
+        "text": "很高興認識您。"
+      }
+    ],
+    "correctOptionId": "sentences-q-9-o-1",
+    "explanation": "맵지 않게 表示以不辣的方式；해 주세요 請對方幫忙做。"
+  },
+  {
+    "id": "sentences-q-10",
+    "bank": "sentences",
+    "prompt": "「이거 얼마예요?」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-10-o-1",
+        "text": "這個多少錢？"
+      },
+      {
+        "id": "sentences-q-10-o-2",
+        "text": "可以刷卡付款嗎？"
+      },
+      {
+        "id": "sentences-q-10-o-3",
+        "text": "離這裡遠嗎？"
+      },
+      {
+        "id": "sentences-q-10-o-4",
+        "text": "請慢走／再見。"
+      }
+    ],
+    "correctOptionId": "sentences-q-10-o-1",
+    "explanation": "얼마 表示多少金額，接 예요 成為禮貌問句。"
+  },
+  {
+    "id": "sentences-q-11",
+    "bank": "sentences",
+    "prompt": "「카드로 결제할 수 있어요?」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-11-o-1",
+        "text": "可以刷卡付款嗎？"
+      },
+      {
+        "id": "sentences-q-11-o-2",
+        "text": "有再大一點的嗎？"
+      },
+      {
+        "id": "sentences-q-11-o-3",
+        "text": "請往右邊走。"
+      },
+      {
+        "id": "sentences-q-11-o-4",
+        "text": "我是學生。"
+      }
+    ],
+    "correctOptionId": "sentences-q-11-o-1",
+    "explanation": "카드로 表示用卡；-ㄹ 수 있어요 詢問能否做某事。"
+  },
+  {
+    "id": "sentences-q-12",
+    "bank": "sentences",
+    "prompt": "「좀 더 큰 거 있어요?」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-12-o-1",
+        "text": "有再大一點的嗎？"
+      },
+      {
+        "id": "sentences-q-12-o-2",
+        "text": "洗手間在哪裡？"
+      },
+      {
+        "id": "sentences-q-12-o-3",
+        "text": "您好。"
+      },
+      {
+        "id": "sentences-q-12-o-4",
+        "text": "我的名字是敏秀。"
+      }
+    ],
+    "correctOptionId": "sentences-q-12-o-1",
+    "explanation": "좀 더 表示再稍微；큰 거 表示大的東西。"
+  },
+  {
+    "id": "sentences-q-13",
+    "bank": "sentences",
+    "prompt": "「화장실이 어디예요?」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-13-o-1",
+        "text": "洗手間在哪裡？"
+      },
+      {
+        "id": "sentences-q-13-o-2",
+        "text": "離這裡遠嗎？"
+      },
+      {
+        "id": "sentences-q-13-o-3",
+        "text": "很高興認識您。"
+      },
+      {
+        "id": "sentences-q-13-o-4",
+        "text": "我來自台灣。"
+      }
+    ],
+    "correctOptionId": "sentences-q-13-o-1",
+    "explanation": "화장실이 為主詞，어디예요 詢問位置。"
+  },
+  {
+    "id": "sentences-q-14",
+    "bank": "sentences",
+    "prompt": "「여기에서 멀어요?」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-14-o-1",
+        "text": "離這裡遠嗎？"
+      },
+      {
+        "id": "sentences-q-14-o-2",
+        "text": "請往右邊走。"
+      },
+      {
+        "id": "sentences-q-14-o-3",
+        "text": "請慢走／再見。"
+      },
+      {
+        "id": "sentences-q-14-o-4",
+        "text": "請給我一杯水。"
+      }
+    ],
+    "correctOptionId": "sentences-q-14-o-1",
+    "explanation": "여기에서 表示從這裡；멀어요 來自 멀다。"
+  },
+  {
+    "id": "sentences-q-15",
+    "bank": "sentences",
+    "prompt": "「오른쪽으로 가세요.」在這個情境中的意思是？",
+    "options": [
+      {
+        "id": "sentences-q-15-o-1",
+        "text": "請往右邊走。"
+      },
+      {
+        "id": "sentences-q-15-o-2",
+        "text": "您好。"
+      },
+      {
+        "id": "sentences-q-15-o-3",
+        "text": "我是學生。"
+      },
+      {
+        "id": "sentences-q-15-o-4",
+        "text": "請給我一個這個。"
+      }
+    ],
+    "correctOptionId": "sentences-q-15-o-1",
+    "explanation": "方向加 으로，再用 가세요 禮貌地指示前進。"
+  }
+]

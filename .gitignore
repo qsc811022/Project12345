@@ -1,0 +1,4 @@
+node_modules/
+test-results/
+.preview.log
+.preview-error.log

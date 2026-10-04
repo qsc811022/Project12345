@@ -1,0 +1,413 @@
+[
+  {
+    "id": "basic-consonants",
+    "title": "基本子音",
+    "description": "先認識 14 個基本子音，觀察嘴唇、舌頭與氣流的變化。以下為入門近似提示，請搭配實際語音練習。",
+    "estimatedMinutes": 8,
+    "items": [
+      {
+        "id": "consonant-01",
+        "character": "ㄱ",
+        "type": "基本子音",
+        "explanation": "舌根接近軟顎後放開，氣流較弱；不要刻意送出強氣。",
+        "example": "가방（包包）"
+      },
+      {
+        "id": "consonant-02",
+        "character": "ㄴ",
+        "type": "基本子音",
+        "explanation": "舌尖抵住上齒齦，氣流由鼻腔通過。",
+        "example": "나무（樹）"
+      },
+      {
+        "id": "consonant-03",
+        "character": "ㄷ",
+        "type": "基本子音",
+        "explanation": "舌尖抵住上齒齦後放開，注意與送氣音 ㅌ 區分。",
+        "example": "다리（腿／橋）"
+      },
+      {
+        "id": "consonant-04",
+        "character": "ㄹ",
+        "type": "基本子音",
+        "explanation": "在母音間常為舌尖輕拍，作收音時接近舌側音。",
+        "example": "라디오（收音機）"
+      },
+      {
+        "id": "consonant-05",
+        "character": "ㅁ",
+        "type": "基本子音",
+        "explanation": "雙唇閉合，氣流從鼻腔通過。",
+        "example": "모자（帽子）"
+      },
+      {
+        "id": "consonant-06",
+        "character": "ㅂ",
+        "type": "基本子音",
+        "explanation": "雙唇先閉合再放開，氣流比 ㅍ 弱。",
+        "example": "바다（海）"
+      },
+      {
+        "id": "consonant-07",
+        "character": "ㅅ",
+        "type": "基本子音",
+        "explanation": "氣流從舌尖與齒齦間通過；在 ㅣ 前音色會改變。",
+        "example": "사과（蘋果）"
+      },
+      {
+        "id": "consonant-08",
+        "character": "ㅇ",
+        "type": "基本子音",
+        "explanation": "在音節開頭不發音，作收音時發鼻音。",
+        "example": "아이（孩子）"
+      },
+      {
+        "id": "consonant-09",
+        "character": "ㅈ",
+        "type": "基本子音",
+        "explanation": "先阻住氣流再摩擦放開，與 ㅊ 的送氣程度不同。",
+        "example": "지도（地圖）"
+      },
+      {
+        "id": "consonant-10",
+        "character": "ㅊ",
+        "type": "基本子音",
+        "explanation": "與 ㅈ 發音位置相近，但有較明顯的送氣。",
+        "example": "차（茶／車）"
+      },
+      {
+        "id": "consonant-11",
+        "character": "ㅋ",
+        "type": "基本子音",
+        "explanation": "與 ㄱ 發音位置相近，放開時送出較強氣流。",
+        "example": "코（鼻子）"
+      },
+      {
+        "id": "consonant-12",
+        "character": "ㅌ",
+        "type": "基本子音",
+        "explanation": "與 ㄷ 發音位置相近，放開時送出較強氣流。",
+        "example": "토끼（兔子）"
+      },
+      {
+        "id": "consonant-13",
+        "character": "ㅍ",
+        "type": "基本子音",
+        "explanation": "雙唇放開時送出較強氣流，與 ㅂ 區分。",
+        "example": "포도（葡萄）"
+      },
+      {
+        "id": "consonant-14",
+        "character": "ㅎ",
+        "type": "基本子音",
+        "explanation": "由喉部送出輕微摩擦氣流。",
+        "example": "하늘（天空）"
+      }
+    ]
+  },
+  {
+    "id": "basic-vowels",
+    "title": "基本母音",
+    "description": "認識 10 個基本母音。母音決定音節的核心，也影響韓文字的排列方式。以下為入門近似提示。",
+    "estimatedMinutes": 7,
+    "items": [
+      {
+        "id": "vowel-01",
+        "character": "ㅏ",
+        "type": "基本母音",
+        "explanation": "張口，舌頭自然放低；注意嘴形保持穩定。",
+        "example": "아기（嬰兒）"
+      },
+      {
+        "id": "vowel-02",
+        "character": "ㅑ",
+        "type": "基本母音",
+        "explanation": "先有短促的滑音，再接 ㅏ。",
+        "example": "야구（棒球）"
+      },
+      {
+        "id": "vowel-03",
+        "character": "ㅓ",
+        "type": "基本母音",
+        "explanation": "嘴唇不圓，口腔開度較大，與 ㅗ 的圓唇區分。",
+        "example": "어머니（母親）"
+      },
+      {
+        "id": "vowel-04",
+        "character": "ㅕ",
+        "type": "基本母音",
+        "explanation": "先有短促的滑音，再接 ㅓ。",
+        "example": "여우（狐狸）"
+      },
+      {
+        "id": "vowel-05",
+        "character": "ㅗ",
+        "type": "基本母音",
+        "explanation": "雙唇圓起並微向前，與不圓唇的 ㅓ 區分。",
+        "example": "오이（小黃瓜）"
+      },
+      {
+        "id": "vowel-06",
+        "character": "ㅛ",
+        "type": "基本母音",
+        "explanation": "先有短促的滑音，再接 ㅗ。",
+        "example": "요리（料理）"
+      },
+      {
+        "id": "vowel-07",
+        "character": "ㅜ",
+        "type": "基本母音",
+        "explanation": "嘴唇圓起，舌頭位置比 ㅗ 更高。",
+        "example": "우유（牛奶）"
+      },
+      {
+        "id": "vowel-08",
+        "character": "ㅠ",
+        "type": "基本母音",
+        "explanation": "先有短促的滑音，再接 ㅜ。",
+        "example": "유리（玻璃）"
+      },
+      {
+        "id": "vowel-09",
+        "character": "ㅡ",
+        "type": "基本母音",
+        "explanation": "舌位較高，嘴唇不圓，不要讀成 ㅜ。",
+        "example": "음악（音樂）"
+      },
+      {
+        "id": "vowel-10",
+        "character": "ㅣ",
+        "type": "基本母音",
+        "explanation": "舌頭靠前且位置較高，嘴唇不圓。",
+        "example": "이름（名字）"
+      }
+    ]
+  },
+  {
+    "id": "advanced-letters",
+    "title": "進階字母",
+    "description": "5 個緊音子音與 11 個其餘母音。慣稱複合母音是教學分組，不表示每個字母在現代發音中都是雙母音。以下為入門近似提示。",
+    "estimatedMinutes": 8,
+    "items": [
+      {
+        "id": "advanced-01",
+        "character": "ㄲ",
+        "type": "進階字母",
+        "explanation": "ㄱ 的緊音，發音時較緊，並非單純加強送氣。",
+        "example": "꼬리（尾巴）"
+      },
+      {
+        "id": "advanced-02",
+        "character": "ㄸ",
+        "type": "進階字母",
+        "explanation": "ㄷ 的緊音，舌頭與喉部保持較緊的發音狀態。",
+        "example": "딸（女兒）"
+      },
+      {
+        "id": "advanced-03",
+        "character": "ㅃ",
+        "type": "進階字母",
+        "explanation": "ㅂ 的緊音，雙唇緊閉後放開，送氣弱。",
+        "example": "빵（麵包）"
+      },
+      {
+        "id": "advanced-04",
+        "character": "ㅆ",
+        "type": "進階字母",
+        "explanation": "ㅅ 的緊音，摩擦較緊而清晰。",
+        "example": "쌀（米）"
+      },
+      {
+        "id": "advanced-05",
+        "character": "ㅉ",
+        "type": "進階字母",
+        "explanation": "ㅈ 的緊音，不要用 ㅊ 的送氣方式發音。",
+        "example": "짜다（鹹）"
+      },
+      {
+        "id": "advanced-06",
+        "character": "ㅐ",
+        "type": "進階字母",
+        "explanation": "可從 ㅏ＋ㅣ 的字形理解；現代口語中常接近 ㅔ。",
+        "example": "애인（戀人）"
+      },
+      {
+        "id": "advanced-07",
+        "character": "ㅒ",
+        "type": "進階字母",
+        "explanation": "含滑音的 ㅐ；初學時先熟悉字形與例字。",
+        "example": "얘기（談話）"
+      },
+      {
+        "id": "advanced-08",
+        "character": "ㅔ",
+        "type": "進階字母",
+        "explanation": "舌位靠前；許多現代使用者的發音與 ㅐ 相近。",
+        "example": "가게（店）"
+      },
+      {
+        "id": "advanced-09",
+        "character": "ㅖ",
+        "type": "進階字母",
+        "explanation": "含滑音的 ㅔ，注意與 ㅔ 字形區分。",
+        "example": "예술（藝術）"
+      },
+      {
+        "id": "advanced-10",
+        "character": "ㅘ",
+        "type": "進階字母",
+        "explanation": "由 ㅗ 滑向 ㅏ，連成一個音節內的母音。",
+        "example": "과자（餅乾）"
+      },
+      {
+        "id": "advanced-11",
+        "character": "ㅙ",
+        "type": "進階字母",
+        "explanation": "由圓唇滑音接到 ㅐ，現代口語常接近 ㅞ。",
+        "example": "왜（為什麼）"
+      },
+      {
+        "id": "advanced-12",
+        "character": "ㅚ",
+        "type": "進階字母",
+        "explanation": "現代常讀成接近 ㅞ 的滑音，也有單母音讀法。",
+        "example": "외국（外國）"
+      },
+      {
+        "id": "advanced-13",
+        "character": "ㅝ",
+        "type": "進階字母",
+        "explanation": "由 ㅜ 滑向 ㅓ。",
+        "example": "원（韓元）"
+      },
+      {
+        "id": "advanced-14",
+        "character": "ㅞ",
+        "type": "進階字母",
+        "explanation": "由圓唇滑音接到 ㅔ。",
+        "example": "웨이터（服務生）"
+      },
+      {
+        "id": "advanced-15",
+        "character": "ㅟ",
+        "type": "進階字母",
+        "explanation": "由圓唇滑音接到 ㅣ，也有單母音讀法。",
+        "example": "위（上面）"
+      },
+      {
+        "id": "advanced-16",
+        "character": "ㅢ",
+        "type": "進階字母",
+        "explanation": "基本讀法由 ㅡ 滑向 ㅣ，實際讀音依位置與用途改變。",
+        "example": "의자（椅子）"
+      }
+    ]
+  },
+  {
+    "id": "syllable-blocks",
+    "title": "把字母組成音節",
+    "description": "韓文字母以音節為單位組成方塊。由上到下、由左到右辨識初聲、母音與收音。",
+    "estimatedMinutes": 4,
+    "items": [
+      {
+        "id": "block-01",
+        "character": "가",
+        "type": "組字",
+        "explanation": "ㄱ＋ㅏ：直向母音寫在子音右邊。",
+        "example": "가다（去）"
+      },
+      {
+        "id": "block-02",
+        "character": "고",
+        "type": "組字",
+        "explanation": "ㄱ＋ㅗ：橫向母音寫在子音下方。",
+        "example": "고기（肉）"
+      },
+      {
+        "id": "block-03",
+        "character": "과",
+        "type": "組字",
+        "explanation": "ㄱ＋ㅘ：複合字形同時占右邊與下方。",
+        "example": "과일（水果）"
+      },
+      {
+        "id": "block-04",
+        "character": "한",
+        "type": "組字",
+        "explanation": "ㅎ＋ㅏ＋ㄴ：收音寫在整個音節的最下方。",
+        "example": "한국（韓國）"
+      },
+      {
+        "id": "block-05",
+        "character": "아",
+        "type": "組字",
+        "explanation": "ㅇ＋ㅏ：沒有起始子音的聲音時，以不發音的 ㅇ 占位。",
+        "example": "아이（孩子）"
+      }
+    ]
+  },
+  {
+    "id": "batchim-intro",
+    "title": "入門收音",
+    "description": "받침 是位於音節底部的子音。單獨或接子音時，常歸納為七種代表音；連音、鼻音化等情況會改變讀音，這裡先建立基本概念。",
+    "estimatedMinutes": 5,
+    "items": [
+      {
+        "id": "batchim-01",
+        "character": "ㄱ",
+        "type": "收音",
+        "explanation": "ㄱ、ㅋ、ㄲ 作音節末收音時，常以閉住舌根、不爆破的方式收尾。",
+        "example": "국（湯）"
+      },
+      {
+        "id": "batchim-02",
+        "character": "ㄴ",
+        "type": "收音",
+        "explanation": "舌尖抵住上齒齦，以鼻音結尾。",
+        "example": "산（山）"
+      },
+      {
+        "id": "batchim-03",
+        "character": "ㄷ",
+        "type": "收音",
+        "explanation": "ㄷ、ㅅ、ㅆ、ㅈ、ㅊ、ㅌ、ㅎ 等作音節末音時可歸入此代表音；接續音會影響實際讀法。",
+        "example": "옷（衣服）"
+      },
+      {
+        "id": "batchim-04",
+        "character": "ㄹ",
+        "type": "收音",
+        "explanation": "舌尖接觸上齒齦附近，以舌側音收尾。",
+        "example": "달（月亮）"
+      },
+      {
+        "id": "batchim-05",
+        "character": "ㅁ",
+        "type": "收音",
+        "explanation": "雙唇閉合，以鼻音結尾。",
+        "example": "밤（夜晚）"
+      },
+      {
+        "id": "batchim-06",
+        "character": "ㅂ",
+        "type": "收音",
+        "explanation": "ㅂ、ㅍ 在音節末常閉唇收住，不再額外加母音。",
+        "example": "밥（飯）"
+      },
+      {
+        "id": "batchim-07",
+        "character": "ㅇ",
+        "type": "收音",
+        "explanation": "在收音位置發舌根鼻音，與音節開頭不發音的 ㅇ 不同。",
+        "example": "방（房間）"
+      },
+      {
+        "id": "batchim-08",
+        "character": "연음",
+        "type": "收音",
+        "explanation": "當後面接以 ㅇ 起頭的母音音節，收音常移接到後面發音；並非所有情形都適用同一規則。",
+        "example": "밥을 → [바블]（把飯…）"
+      }
+    ]
+  }
+]

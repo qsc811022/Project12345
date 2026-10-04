@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>返回韓文起步</title></head><body><p id="message">正在尋找韓文起步首頁…</p><a href="./index.html#/home">返回首頁</a><script>
+// Find the app marker in ancestor directories. This handles project sites,
+// user sites and custom domains without a hard-coded repository name.
+(async () => {
+  const parts = location.pathname.split('/').filter(Boolean);
+  if (!location.pathname.endsWith('/')) parts.pop();
+  while (true) {
+    const candidate = new URL('./index.html', location.origin + '/' + (parts.length ? parts.join('/') + '/' : ''));
+    try {
+      const response = await fetch(candidate);
+      if (response.ok && (await response.text()).includes('name="application-name" content="韓文起步"')) { location.replace(candidate.href + '#/home'); return; }
+    } catch { /* Continue toward the origin when a directory is unavailable. */ }
+    if (!parts.length) break;
+    parts.pop();
+  }
+  document.getElementById('message').textContent = '找不到網站首頁，請確認網址或稍後再試。';
+})();
+</script></body></html>

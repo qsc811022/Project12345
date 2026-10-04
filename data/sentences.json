@@ -1,0 +1,167 @@
+[
+  {
+    "id": "greeting-phrases",
+    "title": "打招呼",
+    "sentences": [
+      {
+        "id": "greeting-phrases-1",
+        "categoryId": "greeting-phrases",
+        "korean": "안녕하세요?",
+        "translationZh": "您好。",
+        "situation": "見面時的日常問候",
+        "explanation": "固定問候語，可用於不熟悉的人或長輩。",
+        "politeness": "禮貌問候"
+      },
+      {
+        "id": "greeting-phrases-2",
+        "categoryId": "greeting-phrases",
+        "korean": "만나서 반갑습니다.",
+        "translationZh": "很高興認識您。",
+        "situation": "第一次見面",
+        "explanation": "만나다（見面）接 -아서/어서 表示原因，再接 반갑습니다。",
+        "politeness": "합니다體"
+      },
+      {
+        "id": "greeting-phrases-3",
+        "categoryId": "greeting-phrases",
+        "korean": "안녕히 가세요.",
+        "translationZh": "請慢走／再見。",
+        "situation": "自己留下，向離開的人道別",
+        "explanation": "對離開的人說 가세요；對留下的人則說 안녕히 계세요。",
+        "politeness": "禮貌敬語"
+      }
+    ]
+  },
+  {
+    "id": "introductions",
+    "title": "自我介紹",
+    "sentences": [
+      {
+        "id": "introductions-1",
+        "categoryId": "introductions",
+        "korean": "저는 학생이에요.",
+        "translationZh": "我是學生。",
+        "situation": "介紹自己的身分",
+        "explanation": "저는 提出「我」作為主題；학생 有收音，接 이에요。",
+        "politeness": "해요體"
+      },
+      {
+        "id": "introductions-2",
+        "categoryId": "introductions",
+        "korean": "제 이름은 민수예요.",
+        "translationZh": "我的名字是敏秀。",
+        "situation": "介紹名字",
+        "explanation": "제 是 저의 的縮寫；민수 沒有收音，接 예요。",
+        "politeness": "해요體"
+      },
+      {
+        "id": "introductions-3",
+        "categoryId": "introductions",
+        "korean": "저는 대만에서 왔어요.",
+        "translationZh": "我來自台灣。",
+        "situation": "介紹來自哪裡",
+        "explanation": "地點加 에서 表示出發處；왔어요 是 오다 的過去式。",
+        "politeness": "해요體"
+      }
+    ]
+  },
+  {
+    "id": "ordering",
+    "title": "點餐",
+    "sentences": [
+      {
+        "id": "ordering-1",
+        "categoryId": "ordering",
+        "korean": "물 한 잔 주세요.",
+        "translationZh": "請給我一杯水。",
+        "situation": "向店員要水",
+        "explanation": "한 잔 表示一杯；주세요 是禮貌的請求。",
+        "politeness": "해요體（請求）"
+      },
+      {
+        "id": "ordering-2",
+        "categoryId": "ordering",
+        "korean": "이거 하나 주세요.",
+        "translationZh": "請給我一個這個。",
+        "situation": "指著菜單點餐",
+        "explanation": "이거 是「這個」；하나 是一個，沒有接量詞時保留此形式。",
+        "politeness": "해요體（請求）"
+      },
+      {
+        "id": "ordering-3",
+        "categoryId": "ordering",
+        "korean": "맵지 않게 해 주세요.",
+        "translationZh": "請做得不要辣。",
+        "situation": "告知口味需求",
+        "explanation": "맵지 않게 表示以不辣的方式；해 주세요 請對方幫忙做。",
+        "politeness": "해요體（請求）"
+      }
+    ]
+  },
+  {
+    "id": "shopping",
+    "title": "購物",
+    "sentences": [
+      {
+        "id": "shopping-1",
+        "categoryId": "shopping",
+        "korean": "이거 얼마예요?",
+        "translationZh": "這個多少錢？",
+        "situation": "詢問價格",
+        "explanation": "얼마 表示多少金額，接 예요 成為禮貌問句。",
+        "politeness": "해요體"
+      },
+      {
+        "id": "shopping-2",
+        "categoryId": "shopping",
+        "korean": "카드로 결제할 수 있어요?",
+        "translationZh": "可以刷卡付款嗎？",
+        "situation": "確認付款方式",
+        "explanation": "카드로 表示用卡；-ㄹ 수 있어요 詢問能否做某事。",
+        "politeness": "해요體"
+      },
+      {
+        "id": "shopping-3",
+        "categoryId": "shopping",
+        "korean": "좀 더 큰 거 있어요?",
+        "translationZh": "有再大一點的嗎？",
+        "situation": "詢問較大的尺寸",
+        "explanation": "좀 더 表示再稍微；큰 거 表示大的東西。",
+        "politeness": "해요體"
+      }
+    ]
+  },
+  {
+    "id": "directions",
+    "title": "問路",
+    "sentences": [
+      {
+        "id": "directions-1",
+        "categoryId": "directions",
+        "korean": "화장실이 어디예요?",
+        "translationZh": "洗手間在哪裡？",
+        "situation": "尋找洗手間",
+        "explanation": "화장실이 為主詞，어디예요 詢問位置。",
+        "politeness": "해요體"
+      },
+      {
+        "id": "directions-2",
+        "categoryId": "directions",
+        "korean": "여기에서 멀어요?",
+        "translationZh": "離這裡遠嗎？",
+        "situation": "確認距離",
+        "explanation": "여기에서 表示從這裡；멀어요 來自 멀다。",
+        "politeness": "해요體"
+      },
+      {
+        "id": "directions-3",
+        "categoryId": "directions",
+        "korean": "오른쪽으로 가세요.",
+        "translationZh": "請往右邊走。",
+        "situation": "指引方向",
+        "explanation": "方向加 으로，再用 가세요 禮貌地指示前進。",
+        "politeness": "해요體（敬語）"
+      }
+    ]
+  }
+]

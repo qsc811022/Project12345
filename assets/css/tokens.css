@@ -1,0 +1,25 @@
+:root {
+  --color-bg: #f4f5f5;
+  --color-surface: #fff;
+  --color-text: #29414b;
+  --color-text-muted: #646b70;
+  --color-border: #d9dddf;
+  --color-border-strong: #8e969a;
+  --color-accent: #8a4f4a;
+  --color-accent-soft: #f3ecea;
+  --color-success: #2c7a68;
+  --color-danger: #a85151;
+  --color-focus: #29414b;
+  --font-sans: system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  --container-width: 1120px;
+  --content-width: 840px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 72px;
+  --space-7: 112px;
+}

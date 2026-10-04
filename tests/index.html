@@ -1,0 +1,11 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>韓文起步｜邏輯檢查</title><link rel="stylesheet" href="../assets/css/tokens.css"><link rel="stylesheet" href="../assets/css/base.css"></head><body><main class="reading"><h1>邏輯檢查</h1><p id="summary" role="status">檢查中…</p><ol id="results"></ol><a href="../index.html">回到網站</a></main><script type="module">
+import { loadData } from '../assets/js/data.js';
+import { runChecks } from './logic.js';
+try {
+  const results = runChecks(await loadData());
+  const failures = results.filter(r => !r.passed);
+  document.getElementById('summary').textContent = `${results.length - failures.length} / ${results.length} 通過`;
+  for (const result of results) { const li = document.createElement('li'); li.textContent = `${result.passed ? '✓' : '✕'} ${result.name}${result.message ? '：' + result.message : ''}`; document.getElementById('results').append(li); }
+  window.testResults = results;
+} catch (error) { document.getElementById('summary').textContent = error.message; window.testResults = [{ passed: false, message: error.message }]; }
+</script></body></html>

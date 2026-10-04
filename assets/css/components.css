@@ -1,0 +1,54 @@
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; max-width: 1232px; padding: 12px 20px; margin: auto; border-bottom: 1px solid var(--color-border); }
+.brand { display: inline-flex; align-items: center; gap: 12px; text-decoration: none; font-size: 1.15rem; font-weight: 700; flex-shrink: 0; }
+.brand-mark { display: grid; place-items: center; width: 42px; height: 42px; background: var(--color-text); color: white; border-radius: 10px; font-size: 1.6rem; font-weight: 500; }
+.brand small { display: block; margin-top: 1px; font-size: .52rem; letter-spacing: .16em; font-weight: 500; }
+.desktop-nav { display: none; gap: 3px; align-items: center; }
+.nav-link { text-decoration: none; padding: 12px 9px; min-height: 44px; font-size: .83rem; border-radius: 6px; }
+.nav-link:hover, .nav-link[aria-current="page"] { color: var(--color-accent); background: var(--color-accent-soft); }
+.menu-toggle { display: grid; align-content: center; gap: 5px; width: 48px; height: 48px; padding: 12px; background: transparent; border: 1px solid var(--color-border-strong); border-radius: 8px; }
+.menu-toggle span { height: 2px; background: var(--color-text); }
+.mobile-menu { position: fixed; inset: 0 0 0 auto; width: min(340px, 90vw); height: 100dvh; max-height: none; border: 0; margin: 0; padding: 36px 24px; background: white; color: var(--color-text); }
+.mobile-menu nav { display: grid; gap: 5px; margin-bottom: 24px; }
+.mobile-menu .nav-link { font-size: 1rem; padding: 12px; }
+dialog::backdrop { background: rgb(24 38 43 / .4); }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 11px 22px; min-height: 46px; border: 1px solid var(--color-text); border-radius: var(--radius-sm); background: var(--color-text); color: white; font-size: .9rem; font-weight: 600; line-height: 1.5; text-decoration: none; transition: background .18s; }
+.button:hover:not(:disabled) { background: #3c5661; }
+.button.secondary { background: white; color: var(--color-text); border-color: var(--color-border-strong); }
+.button.secondary:hover:not(:disabled) { background: var(--color-bg); }
+.button.small { font-size: .8rem; padding: 10px 14px; }
+.button.done { color: var(--color-success); background: #f0f7f4; border-color: var(--color-success); }
+.text-link { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; font-size: .875rem; text-decoration: none; border-bottom: 1px solid var(--color-border-strong); }
+.card { border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: white; padding: 24px; min-width: 0; }
+a.card { display: block; color: inherit; text-decoration: none; transition: border-color .18s, transform .18s, box-shadow .18s; }
+a.card:hover { border-color: var(--color-border-strong); transform: translateY(-2px); box-shadow: 0 4px 12px rgb(41 65 75 / .04); }
+.card p:last-child { margin-bottom: 0; }
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.badge { display: inline-block; padding: 3px 9px; background: var(--color-accent-soft); color: var(--color-accent); border-radius: 4px; font-size: .7rem; white-space: nowrap; font-weight: 600; }
+.badge.complete { background: #edf5f1; color: var(--color-success); }
+.number { color: var(--color-accent); font-size: .75rem; letter-spacing: .12em; }
+.progress-track { width: 100%; height: 5px; background: #e9eceb; border-radius: 3px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--color-accent); }
+.progress-caption { display: flex; justify-content: space-between; margin: 12px 0; font-size: .75rem; color: var(--color-text-muted); }
+.grammar-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.grammar-card { min-height: 140px; padding: 22px; }
+.grammar-card h3 { font-size: 1.3rem; margin: 14px 0 5px; }
+.grammar-card p { font-size: .85rem; color: var(--color-text-muted); }
+.grammar-card .category { font-size: .68rem; color: var(--color-accent); }
+.read-mark { float: right; color: var(--color-success); }
+.filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; }
+.filter { min-height: 44px; padding: 8px 16px; border: 1px solid var(--color-border-strong); border-radius: 6px; color: var(--color-text-muted); background: white; font-size: .85rem; }
+.filter[aria-pressed="true"] { background: var(--color-text); border-color: var(--color-text); color: white; }
+.notice { padding: 16px 20px; border: 1px solid var(--color-border); border-left: 3px solid var(--color-accent); background: #faf7f5; color: var(--color-text); font-size: .875rem; border-radius: 4px; }
+.global-notice { max-width: 1120px; margin: 16px auto; }
+.empty-state { text-align: center; border: 1px dashed var(--color-border-strong); padding: 40px 24px; border-radius: 8px; }
+.confirm-dialog { width: min(480px, calc(100% - 40px)); padding: 32px; border: 1px solid var(--color-border); border-radius: 16px; color: var(--color-text); }
+.confirm-dialog h2 { font-size: 1.4rem; }
+.confirm-dialog .actions { justify-content: flex-end; margin-top: 28px; }
+.site-footer { max-width: 1120px; margin: auto; padding: 48px 20px 32px; }
+.site-footer > p { color: var(--color-text-muted); font-size: .8rem; margin: 16px 0 36px; }
+.footer-brand .brand-mark { width: 32px; height: 32px; font-size: 1.2rem; border-radius: 7px; }
+.footer-brand { font-size: 1rem; }
+.footer-meta { border-top: 1px solid var(--color-border); padding-top: 20px; display: flex; flex-wrap: wrap; gap: 12px 28px; color: var(--color-text-muted); font-size: .7rem; align-items: center; }
+.footer-meta a { display: inline-flex; min-height: 44px; align-items: center; }
+@media (min-width: 600px) { .grammar-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .site-header { padding-inline: 32px; } .site-footer { padding-inline: 32px; } }
+@media (min-width: 1024px) { .desktop-nav { display: flex; } .menu-toggle { display: none; } .site-header { min-height: 96px; padding-inline: 48px; } .grammar-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .site-footer { padding-inline: 56px; } .footer-meta a { margin-left: auto; } }
