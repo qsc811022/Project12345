@@ -10,10 +10,12 @@ export function runChecks(data) {
   const catalog = { lessons: lessonCatalog(data).map(l => l.id), grammar: data.grammar.map(g => g.id), words: data.vocabulary.flatMap(t => t.words.map(w => w.id)) };
   const result = { score: 80, correct: 8, total: 10, completedAt: '2026-10-04T10:00:00.000Z' };
   check('教材所有資料契約有效，ID 不重複', () => { for (const [kind, items] of Object.entries(data)) { const warnings = []; assert(validateDataset(kind, items, m => warnings.push(m)).length === items.length); assert(!warnings.length); } });
-  check('教材數量：15 單元、40 字母、50 單字、15 句型、30 文法', () => {
+  check('教材數量：15 單元、40 字母、100 單字、15 句型、30 文法', () => {
     assert(catalog.lessons.length === 15); assert(new Set([...catalog.lessons, ...catalog.grammar]).size === 45);
     assert(data.alphabet.slice(0, 3).flatMap(l => l.items).length === 40);
-    assert(data.vocabulary.length === 5 && data.vocabulary.every(t => t.words.length >= 10));
+    assert(data.vocabulary.length === 5 && data.vocabulary.every(t => t.words.length >= 20));
+    const words = data.vocabulary.flatMap(topic => topic.words);
+    assert(new Set(words.map(word => word.korean)).size === words.length, '單字不應重複');
     assert(data.sentences.length === 5 && data.sentences.every(c => c.sentences.length >= 3));
     assert(data.grammar.length >= 30 && data.grammar.every(g => g.examples.length >= 2));
     assert(['alphabet', 'vocabulary', 'sentences'].every(b => data.quizzes.filter(q => q.bank === b).length >= 15));

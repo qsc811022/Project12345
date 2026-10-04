@@ -28,7 +28,7 @@ export function infoCard() {
 }
 export const COURSES = [
   { kind: 'alphabet', title: '韓文字母入門', time: 32, art: ['ㄱ', 'ㅏ', '가'], style: '', description: '從字母形狀，到讀出第一個音節。' },
-  { kind: 'vocabulary', title: '日常單字', time: 40, art: ['사과', '커피'], style: 'words', description: '五個生活主題，累積你的常用詞。' },
+  { kind: 'vocabulary', title: '日常單字', time: 80, art: ['사과', '커피'], style: 'words', description: '五個生活主題，累積你的常用詞。' },
   { kind: 'sentences', title: '基礎句型', time: 25, art: ['안녕하세요?'], style: 'sentences', description: '把認識的單字，放進真實對話。' }
 ];
 export function courseCard(course, data, store) {

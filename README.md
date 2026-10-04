@@ -23,7 +23,7 @@ node tests/server.mjs
 ## 第一版內容
 
 - 15 個可標記完成的單元：5 個字母單元、5 個單字主題、5 個句型情境。
-- 40 個字母、50 個單字、15 個句型、30 則文法，每則文法至少 2 個例句。
+- 40 個字母、100 個單字（5 個主題各 20 個）、15 個句型、30 則文法，每則文法至少 2 個例句。
 - 45 題題庫：字母、單字、句型各 15 題；也可選擇綜合練習。
 - 每回 10 題，題目與選項隨機排列；即時解說、錯題回顧與各題庫最佳成績。
 - 單字收藏、文法已讀、最近學習、完成百分比與資料重設。
@@ -63,10 +63,13 @@ node tests/server.mjs
 | 日期 | 校對者 | 範圍與限制 |
 | --- | --- | --- |
 | 2026-10-04 | Codex（AI 輔助初校） | 檢查字母分類、單字與句型翻譯、文法接續說明、題目答案一致性及教材資料契約。尚未經韓文教師或母語者人工複核；正式對外發布前建議完成複核並在此補登。 |
+| 2026-10-05 | Codex（AI 輔助初校） | 每個主題新增 10 個詞彙／常用表達，共增加 50 個，均附自編韓文例句與繁體中文翻譯；保留原單字 ID。檢查字義、例句與拼寫，人工複核仍待完成。 |
 
 教材例句與中文說明為本專案自行編寫，並非摘錄外部教材。字母與音節結構參考 [韓國國立國語院：About Hangeul](https://www.korean.go.kr/eng_hangeul/principle/001.html)、[韓文字母與母音介紹](https://www.korean.go.kr/hangeul/cpron/01_elementary/02_vowel.htm)。延伸查詢可使用 [韓語基礎詞典](https://krdict.korean.go.kr/eng/mainAction?flag=PC)。
 
 「11 個複合母音」沿用規格的教學分組，詳情頁特別說明這不等同於現代語音學中的雙母音分類。字母發音說明屬入門提示，語音朗讀不作為發音評分依據。
+
+本次新增內容包括道別與求助表達、常見食材、固有數詞一至五、時段、旅遊用品及家居物品。另參考國立國語院資料確認 [안녕히 的道別用法](https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=28415)、[환승하다 的轉乘用法](https://krdict.korean.go.kr/kor/dicSearch/SearchView?ParaWordNo=89139) 與 [계란 的標準用詞](https://www.korean.go.kr/front/onlineQna/onlineQnaView.do?mn_id=&pageIndex=1&qna_seq=333181)；本站例句非逐字引用。
 
 ## 儲存與語音
 
