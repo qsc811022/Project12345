@@ -9,7 +9,7 @@ export function quizPage(ctx) {
     const fieldset = el('fieldset', {}, el('legend', {}, '選擇今天想練習的內容'));
     fieldset.append(el('div', { class: 'quiz-banks' }, Object.entries(BANKS).map(([id, title]) => el('label', { class: 'quiz-bank' }, el('input', { type: 'radio', name: 'bank', value: id, checked: selectedBank === id, onChange: () => { selectedBank = id; } }), el('span', {}, title, el('small', {}, id === 'mixed' ? '三種題庫隨機出題' : `${ctx.data.quizzes.filter(q => q.bank === id).length} 題題庫`))))));
     const error = el('p', { role: 'alert', class: 'notice', hidden: true });
-    body.replaceChildren(fieldset, el('p', { class: 'muted' }, '每回合 10 題，不限時間。送出答案後會有解說，完整完成才記錄成績。'), error, button('開始測驗 →', () => {
+    body.replaceChildren(el('div', { class: 'quiz-brief', 'aria-label': '練習規則' }, el('span', {}, '⚑ 每回合 10 題'), el('span', {}, '∞ 不限時間'), el('span', {}, '✦ 完成後記錄最佳成績')), fieldset, el('p', { class: 'muted' }, '每回合 10 題，不限時間。送出答案後會有解說，完整完成才記錄成績。'), error, button('開始測驗 →', () => {
       try { quiz = createQuiz(ctx.data.quizzes, selectedBank); ctx.quizActive = true; question(); }
       catch (e) { error.hidden = false; error.textContent = e.message; }
     }));
@@ -48,7 +48,7 @@ export function quizPage(ctx) {
     ctx.quizActive = false;
     const summary = quiz.result();
     const best = ctx.store.record(quiz.bank, summary);
-    const title = el('h2', { tabindex: '-1' }, '又完成了一次練習。');
+    const title = el('h2', { tabindex: '-1' }, '回合完成！又累積了一點實力。');
     const review = el('div', { class: 'stack' });
     quiz.answers.forEach((answer, index) => {
       if (answer.correct) return;
@@ -59,5 +59,5 @@ export function quizPage(ctx) {
     title.focus(); announce(`測驗完成，${summary.score} 分，答對 ${summary.correct} 題。`);
   }
   setup();
-  return { title: '練習測驗', nodes: [hero('PRACTICE / LITTLE BY LITTLE', '練習，讓記憶更清楚。', '不用急著答對。每一次回顧，都是把韓文記得更牢的一次機會。'), body] };
+  return { title: '練習競技場', nodes: [hero('PRACTICE ARENA / 練習競技場', '準備好，來一回合！', '選擇你的練習領域，用 10 題回顧冒險途中學會的韓文。答錯也沒關係，看完解說再前進。'), body] };
 }

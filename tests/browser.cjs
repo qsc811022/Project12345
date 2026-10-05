@@ -16,6 +16,12 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
     await check('GitHub Pages 子路徑資源、首頁與邏輯測試', async () => {
       await go('#/home'); assert.match(await page.title(), /韓文起步/); assert.equal(await page.locator('main h1').count(), 1);
       assert.equal(await page.locator('.showcase-card img').count(), 4);
+      assert.deepEqual(await page.locator('.region-link').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['#/alphabet', '#/vocabulary', '#/sentences', '#/grammar', '#/quiz']);
+      assert.equal(await page.locator('.mission-copy .button').getAttribute('href'), '#/alphabet/basic-consonants');
+      await page.getByRole('link', { name: '探索地圖 ↓', exact: true }).click();
+      assert.equal(await page.evaluate(() => document.activeElement === document.querySelector('#learning-route h2')), true);
+      assert.equal(new URL(page.url()).hash, '#/home');
+      await page.locator('.region-link').first().click(); await page.waitForURL('**/#/alphabet'); await go('#/home');
       const resources = await page.evaluate(() => performance.getEntriesByType('resource').map(r => r.name)); assert(resources.filter(url => /data\/.*json/.test(url)).every(url => url.includes('/korean-start/')));
       await page.locator('.showcase-card').last().scrollIntoViewIfNeeded();
       await page.waitForFunction(() => [...document.querySelectorAll('.showcase-card img')].every(img => img.complete && img.naturalWidth > 0));
@@ -36,6 +42,8 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
       await go('#/vocabulary/food'); await page.getByRole('button', { name: '收藏 물', exact: true }).click(); await page.reload(); await page.getByRole('button', { name: '取消收藏 물', exact: true }).waitFor();
       const saved = await state(); assert.equal(saved.completedLessonIds.length, 1); assert.equal(saved.readGrammarIds.length, 1); assert.equal(saved.favoriteWordIds.length, 1);
       await go('#/home'); assert.equal(await page.locator('.stat strong').first().innerText(), '7%');
+      assert.equal(await page.locator('.map-region').first().locator('.region-count').innerText(), '1 / 5 單元完成');
+      assert.notEqual(await page.locator('.mission-copy .button').getAttribute('href'), '#/alphabet/basic-consonants');
     });
     await check('測驗送出、錯題回顧、完整成績與最佳成績', async () => {
       await go('#/quiz'); await page.getByRole('button', { name: '開始測驗 →', exact: true }).click();
