@@ -1,6 +1,6 @@
 :root {
-  --color-bg: #f5f3fc;
-  --color-surface: #fff;
+  --color-bg: #e9e0f7;
+  --color-surface: #faf7ff;
   --color-text: #34304b;
   --color-text-muted: #69647b;
   --color-border: #e2dded;
@@ -10,6 +10,10 @@
   --color-success: #287451;
   --color-danger: #a85151;
   --color-focus: #583794;
+  --color-panel: #f1eafa;
+  --color-night: #302044;
+  --color-night-muted: #ddd0ef;
+  --color-gold: #f7cc71;
   --font-sans: system-ui, -apple-system, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
   --container-width: 1120px;
   --content-width: 840px;

@@ -16,6 +16,8 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
     await check('GitHub Pages 子路徑資源、首頁與邏輯測試', async () => {
       await go('#/home'); assert.match(await page.title(), /韓文起步/); assert.equal(await page.locator('main h1').count(), 1);
       assert.equal(await page.locator('.showcase-card img').count(), 4);
+      await page.waitForFunction(() => [...document.querySelectorAll('.boss-portrait')].length === 2 && [...document.querySelectorAll('.boss-portrait')].every(img => img.complete && img.naturalWidth > 0));
+      assert.equal(await page.locator('.boss-invitation a').getAttribute('href'), '#/quiz');
       assert.deepEqual(await page.locator('.region-link').evaluateAll(nodes => nodes.map(n => n.getAttribute('href'))), ['#/alphabet', '#/vocabulary', '#/sentences', '#/grammar', '#/quiz']);
       assert.equal(await page.locator('.mission-copy .button').getAttribute('href'), '#/alphabet/basic-consonants');
       await page.getByRole('link', { name: '探索地圖 ↓', exact: true }).click();
@@ -49,10 +51,14 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
       await go('#/quiz'); await page.getByRole('button', { name: '開始測驗 →', exact: true }).click();
       const questions = await page.evaluate(async () => (await fetch('./data/quizzes.json')).json());
       for (let i = 0; i < 10; i++) {
+        assert.equal(await page.locator('.battle-status .boss-portrait').count(), 1);
+        assert.equal(await page.locator('.battle-status.boss-cheer').count(), 0);
         const prompt = await page.locator('.quiz-question').innerText(); const question = questions.find(q => q.prompt === prompt); assert(question);
         const answerId = i < 8 ? question.correctOptionId : question.options.find(o => o.id !== question.correctOptionId).id;
         await page.locator(`[data-option="${answerId}"]`).click(); await page.getByRole('button', { name: '送出答案', exact: true }).click();
         assert.equal(await page.locator('.quiz-option:disabled').count(), 4);
+        assert.equal(await page.locator('.battle-status.boss-cheer').count(), i < 8 ? 1 : 0);
+        assert.equal(await page.locator('.battle-reply').innerText(), await page.locator('.boss-dialogue').innerText());
         assert.equal((await state()).quizBestScores.mixed, undefined);
         await page.getByRole('button', { name: i === 9 ? '查看結果 →' : '下一題 →', exact: true }).click();
       }

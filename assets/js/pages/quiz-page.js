@@ -1,11 +1,19 @@
 import { el, mixedText, hero, button, link, progressBar, announce } from '../components/dom.js';
 import { createQuiz } from '../quiz.js';
+import { bossPortrait } from '../components/boss.js';
 export const BANKS = { alphabet: '字母辨識', vocabulary: '單字意思', sentences: '句型理解', mixed: '綜合練習' };
 export function quizPage(ctx) {
   const body = el('section', { class: 'reading' });
   let selectedBank = 'mixed';
   let quiz = null;
+  const bossLine = el('p', { class: 'boss-dialogue' }, '「準備好了嗎？讓我看看你的韓文實力！」');
+  const intro = hero('BOSS ARENA / 練習競技場', '字母龍的知識考驗', '選擇你的練習領域，用 10 題回顧冒險途中學會的韓文。答錯也沒關係，看完解說再前進。');
+  intro.classList.add('boss-hero');
+  const introCopy = el('div', { class: 'boss-copy' }, ...Array.from(intro.childNodes));
+  intro.replaceChildren(introCopy, el('div', { class: 'boss-art' }, el('span', { class: 'boss-orbit', 'aria-hidden': 'true' }), bossPortrait(), bossLine));
   function setup() {
+    bossLine.textContent = '「準備好了嗎？讓我看看你的韓文實力！」';
+    intro.classList.remove('boss-cheer');
     const fieldset = el('fieldset', {}, el('legend', {}, '選擇今天想練習的內容'));
     fieldset.append(el('div', { class: 'quiz-banks' }, Object.entries(BANKS).map(([id, title]) => el('label', { class: 'quiz-bank' }, el('input', { type: 'radio', name: 'bank', value: id, checked: selectedBank === id, onChange: () => { selectedBank = id; } }), el('span', {}, title, el('small', {}, id === 'mixed' ? '三種題庫隨機出題' : `${ctx.data.quizzes.filter(q => q.bank === id).length} 題題庫`))))));
     const error = el('p', { role: 'alert', class: 'notice', hidden: true });
@@ -16,6 +24,10 @@ export function quizPage(ctx) {
   }
   function question() {
     const q = quiz.current;
+    intro.classList.remove('boss-cheer');
+    bossLine.textContent = `「第 ${quiz.index + 1} 題，慢慢想，我等你！」`;
+    const battleReply = el('p', { class: 'battle-reply' }, bossLine.textContent);
+    const encounter = el('div', { class: 'battle-status' }, bossPortrait(), el('div', {}, el('strong', {}, 'BOSS · 字母龍'), battleReply));
     let selectedId = null;
     const questionTitle = el('h2', { class: 'quiz-question', tabindex: '-1', id: 'quiz-question' }, mixedText(q.prompt));
     const options = el('div', { class: 'quiz-options', role: 'group', 'aria-labelledby': 'quiz-question' });
@@ -24,6 +36,10 @@ export function quizPage(ctx) {
       if (!selectedId || !quiz.submit(selectedId)) return;
       const answer = q.options.find(o => o.id === q.correctOptionId);
       const correct = selectedId === q.correctOptionId;
+      intro.classList.toggle('boss-cheer', correct);
+      bossLine.textContent = correct ? '「答對了！這招學得不錯！」' : '「看看解說，下次一定更熟悉！」';
+      battleReply.textContent = bossLine.textContent;
+      encounter.classList.toggle('boss-cheer', correct);
       options.querySelectorAll('button').forEach(node => {
         node.disabled = true;
         if (node.dataset.option === q.correctOptionId) { node.classList.add('correct'); node.append(el('span', { class: 'sr-only' }, '（正確答案）')); }
@@ -41,12 +57,15 @@ export function quizPage(ctx) {
       options.querySelectorAll('button').forEach(node => node.setAttribute('aria-pressed', String(node.dataset.option === selectedId)));
       event.currentTarget.focus(); submit.disabled = false;
     } }, el('span', { class: 'option-letter', 'aria-hidden': 'true' }, String.fromCharCode(65 + index)), mixedText(option.text))));
-    body.replaceChildren(el('div', { class: 'quiz-header' }, el('span', {}, BANKS[quiz.bank]), el('span', {}, `第 ${quiz.index + 1} 題 / 10`)), progressBar(quiz.index, 10, '作答進度'), questionTitle, options, feedback, submit);
-    questionTitle.focus();
+    body.replaceChildren(encounter, el('div', { class: 'quiz-header' }, el('span', {}, BANKS[quiz.bank]), el('span', {}, `第 ${quiz.index + 1} 題 / 10`)), progressBar(quiz.index, 10, '作答進度'), questionTitle, options, feedback, submit);
+    questionTitle.focus({ preventScroll: true });
+    body.scrollIntoView({ behavior: 'instant', block: 'start' });
   }
   function result() {
     ctx.quizActive = false;
     const summary = quiz.result();
+    intro.classList.add('boss-cheer');
+    bossLine.textContent = `「完成 10 題！你答對了 ${summary.correct} 題，再接再厲！」`;
     const best = ctx.store.record(quiz.bank, summary);
     const title = el('h2', { tabindex: '-1' }, '回合完成！又累積了一點實力。');
     const review = el('div', { class: 'stack' });
@@ -59,5 +78,5 @@ export function quizPage(ctx) {
     title.focus(); announce(`測驗完成，${summary.score} 分，答對 ${summary.correct} 題。`);
   }
   setup();
-  return { title: '練習競技場', nodes: [hero('PRACTICE ARENA / 練習競技場', '準備好，來一回合！', '選擇你的練習領域，用 10 題回顧冒險途中學會的韓文。答錯也沒關係，看完解說再前進。'), body] };
+  return { title: 'BOSS 練習競技場', nodes: [intro, body] };
 }

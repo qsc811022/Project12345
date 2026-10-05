@@ -1,5 +1,6 @@
 ﻿import { el, ko, link, heading, progressBar } from '../components/dom.js';
 import { COURSES, courseCard, grammarCard } from '../components/learning.js';
+import { bossInvitation, bossPortrait } from '../components/boss.js';
 
 const REGIONS = [
   ['alphabet', '字母森林', '가', '認識韓文的第一個音', 'mint'],
@@ -50,7 +51,7 @@ export function homePage(ctx) {
         const count = kind === 'quiz' ? '每回合 10 題' : `${done} / ${units.length} ${kind === 'grammar' ? '則已讀' : '單元完成'}`;
         return el('li', { class: `map-region ${color}` }, el('a', { class: 'region-link', href: `#/${kind}` },
           el('span', { class: 'region-number' }, `AREA 0${index + 1}`),
-          el('span', { class: 'region-island', 'aria-hidden': 'true' }, ko(icon, 'span'), el('span', { class: 'island-tree tree-left' }), el('span', { class: 'island-tree tree-right' })),
+          el('span', { class: `region-island${kind === 'quiz' ? ' boss-island' : ''}`, 'aria-hidden': 'true' }, kind === 'quiz' ? bossPortrait() : ko(icon, 'span'), el('span', { class: 'island-tree tree-left' }), el('span', { class: 'island-tree tree-right' })),
           el('h3', {}, title), el('p', { class: 'region-description' }, description), el('span', { class: 'region-count' }, done && done === units.length ? '✓ 區域探索完成' : count)));
       }))),
     el('div', { class: 'map-legend' }, el('span', {}, '✦ 自由探索 · 不限時間'), el('a', { href: '#/progress', class: 'text-link' }, '查看冒險紀錄 →')));
@@ -63,6 +64,6 @@ export function homePage(ctx) {
   const kit = el('section', { class: 'section' }, heading('ADVENTURE KIT / 冒險工具箱', '用你喜歡的方式練習', '聽發音、收單字、練句子，再來一場小測驗。'), el('div', { class: 'grid showcase-grid' }, showcases.map(([path, title, description]) => el('article', { class: 'card showcase-card' }, el('img', { src: `./assets/images/preview-${path}.svg`, alt: `${title}的學習畫面示意`, width: 640, height: 400, loading: 'lazy' }), el('div', { class: 'showcase-body' }, el('h3', {}, title), el('p', {}, description), el('a', { class: 'text-link', href: `#/${path}` }, '前往探索 →'))))));
   const grammar = el('section', { class: 'section' }, heading('SKILL BOOK / 文法技能書', '多學一招，就多懂一句', '從一個規則、兩個例句開始，慢慢累積你的韓文技能。'), el('div', { class: 'grammar-grid' }, data.grammar.slice(0, 6).map(g => grammarCard(g, store))), el('div', { class: 'lesson-end' }, link(`探索全部 ${data.grammar.length} 則文法 →`, '#/grammar', true)));
   const coming = el('aside', { class: 'coming-soon' }, el('span', { class: 'coming-icon', 'aria-hidden': 'true' }, '✧'), el('div', {}, el('strong', {}, '下一段冒險：闖關拿密碼'), el('p', {}, '通關獎勵與密碼解鎖規劃中，敬請期待。現在先收集知識，為冒險暖身！')));
-  return { title: '韓文冒險島', nodes: [hero, hud, map, mission, courses, kit, grammar, coming] };
+  return { title: '韓文冒險島', nodes: [hero, hud, map, bossInvitation(), mission, courses, kit, grammar, coming] };
 }
 export function stat(value, label) { return el('div', { class: 'stat' }, el('strong', {}, value), el('span', {}, label)); }

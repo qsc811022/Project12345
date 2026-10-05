@@ -40,6 +40,7 @@ async function start() {
         if (route.page === 'about') page = aboutPage(ctx);
       }
       page ||= { title: '找不到此頁面', nodes: [hero('PAGE NOT FOUND', '找不到此頁面', '這個單元或網址不存在。回到首頁，重新選擇一個學習起點。', [link('返回首頁 →', '#/home')])] };
+      main.dataset.page = route.page;
       main.replaceChildren(...page.nodes); document.title = `${page.title}｜韓文起步`; menu.update(route.page);
       window.scrollTo({ top: 0, behavior: 'instant' }); main.querySelector('h1')?.focus({ preventScroll: true });
     }, async () => {
