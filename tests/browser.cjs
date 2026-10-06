@@ -49,13 +49,19 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
     });
     await check('測驗送出、錯題回顧、完整成績與最佳成績', async () => {
       await go('#/quiz'); await page.getByRole('button', { name: '開始測驗 →', exact: true }).click();
+      assert.equal(await page.locator('.battle-status [role="progressbar"]').getAttribute('aria-valuenow'), '10');
       const questions = await page.evaluate(async () => (await fetch('./data/quizzes.json')).json());
       for (let i = 0; i < 10; i++) {
         assert.equal(await page.locator('.battle-status .boss-portrait').count(), 1);
         assert.equal(await page.locator('.battle-status.boss-cheer').count(), 0);
         const prompt = await page.locator('.quiz-question').innerText(); const question = questions.find(q => q.prompt === prompt); assert(question);
         const answerId = i < 8 ? question.correctOptionId : question.options.find(o => o.id !== question.correctOptionId).id;
-        await page.locator(`[data-option="${answerId}"]`).click(); await page.getByRole('button', { name: '送出答案', exact: true }).click();
+        const hpBefore = await page.locator('.battle-status [role="progressbar"]').getAttribute('aria-valuenow');
+        await page.locator(`[data-option="${answerId}"]`).click();
+        assert.equal(await page.locator('.battle-status [role="progressbar"]').getAttribute('aria-valuenow'), hpBefore);
+        await page.getByRole('button', { name: '送出答案', exact: true }).click();
+        assert.equal(await page.locator('.battle-status [role="progressbar"]').getAttribute('aria-valuenow'), String(10 - Math.min(i + 1, 8)));
+        assert.equal(await page.locator('.boss-hero [role="progressbar"]').getAttribute('aria-valuenow'), String(10 - Math.min(i + 1, 8)));
         assert.equal(await page.locator('.quiz-option:disabled').count(), 4);
         assert.equal(await page.locator('.battle-status.boss-cheer').count(), i < 8 ? 1 : 0);
         assert.equal(await page.locator('.battle-reply').innerText(), await page.locator('.boss-dialogue').innerText());
@@ -63,6 +69,8 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
         await page.getByRole('button', { name: i === 9 ? '查看結果 →' : '下一題 →', exact: true }).click();
       }
       assert.equal(await page.locator('.result-score').innerText(), '80'); assert.equal(await page.locator('.review-card').count(), 2); assert.equal((await state()).quizBestScores.mixed.score, 80);
+      assert.equal(await page.locator('.result-card [role="progressbar"]').getAttribute('aria-valuenow'), '2');
+      assert.equal(await page.locator('.boss-victory').count(), 0);
       await page.screenshot({ path: 'test-results/quiz-result.png', fullPage: true });
     });
     await check('離開測驗取消保留原題；上一頁取消還原；確認才離開', async () => {

@@ -97,11 +97,14 @@ node tests/run.mjs
 
 ```powershell
 node tests/browser.cjs
+node tests/boss.cjs
 ```
 
 可用 `PLAYWRIGHT_MODULE` 指向現有 `playwright` 或 `playwright-core` 模組；使用 `playwright-core` 時可用 `CHROME_PATH` 指定瀏覽器執行檔。`TEST_URL` 可覆寫預設 `http://127.0.0.1:4173/korean-start/`。
 
 測試涵蓋完整教材路由、收藏與進度持久化、10 題作答、離開確認、返回／前進、手機選單焦點、360／768／1280px 版面、載入錯誤與重試、語音降級與重設資料。截圖與報告輸出至 `test-results/`，已加入 Git 忽略。
+
+`tests/boss.cjs` 另外驗證 BOSS 的 10 HP、答對扣血、答錯保留、重複送出、全對擊敗、重玩滿血、取消離開保留，以及 320／360px 與減少動態效果。
 
 本次實測：15／15 邏輯檢查、16／16 Chromium 瀏覽器檢查通過。詳見 [驗證紀錄與未驗證環境](tests/VERIFICATION.md)。
 
@@ -117,4 +120,4 @@ Google 語音選擇的獨立驗證可用 `node tests/speech.cjs` 執行，沿用
 
 保留根目錄 `.nojekyll`，不需要設定建置指令。所有 CSS、JavaScript、圖片與資料皆以相對路徑載入，hash 路由不需要伺服器重寫。`404.html` 在誤入實體路徑時向父目錄尋找本站首頁。
 
-本次交付為本機靜態網站；尚未推送 GitHub 或實際發布。
+原始碼已推送至 GitHub；實際 GitHub Pages 發布狀態請以 repository 的部署結果為準。
