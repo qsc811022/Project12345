@@ -243,6 +243,86 @@
         "meaningZh": "請多多指教／麻煩您了（正式敬語）",
         "exampleKo": "앞으로 잘 부탁드립니다.",
         "exampleZh": "今後請多多指教。"
+      },
+      {
+        "id": "greetings-031",
+        "topicId": "greetings",
+        "korean": "누구",
+        "meaningZh": "誰",
+        "exampleKo": "저 사람은 누구예요?",
+        "exampleZh": "那個人是誰？"
+      },
+      {
+        "id": "greetings-032",
+        "topicId": "greetings",
+        "korean": "무엇",
+        "meaningZh": "什麼",
+        "exampleKo": "이것은 무엇이에요?",
+        "exampleZh": "這是什麼？"
+      },
+      {
+        "id": "greetings-033",
+        "topicId": "greetings",
+        "korean": "어디",
+        "meaningZh": "哪裡",
+        "exampleKo": "어디에 가요?",
+        "exampleZh": "你要去哪裡？"
+      },
+      {
+        "id": "greetings-034",
+        "topicId": "greetings",
+        "korean": "언제",
+        "meaningZh": "什麼時候",
+        "exampleKo": "언제 만날까요?",
+        "exampleZh": "我們什麼時候見面呢？"
+      },
+      {
+        "id": "greetings-035",
+        "topicId": "greetings",
+        "korean": "왜",
+        "meaningZh": "為什麼",
+        "exampleKo": "왜 웃어요?",
+        "exampleZh": "你為什麼笑？"
+      },
+      {
+        "id": "greetings-036",
+        "topicId": "greetings",
+        "korean": "어떻게",
+        "meaningZh": "怎麼／如何",
+        "exampleKo": "이거 어떻게 해요?",
+        "exampleZh": "這個要怎麼做？"
+      },
+      {
+        "id": "greetings-037",
+        "topicId": "greetings",
+        "korean": "여기",
+        "meaningZh": "這裡",
+        "exampleKo": "여기에 앉으세요.",
+        "exampleZh": "請坐這裡。"
+      },
+      {
+        "id": "greetings-038",
+        "topicId": "greetings",
+        "korean": "거기",
+        "meaningZh": "那裡",
+        "exampleKo": "거기에서 기다려 주세요.",
+        "exampleZh": "請在那裡等。"
+      },
+      {
+        "id": "greetings-039",
+        "topicId": "greetings",
+        "korean": "저",
+        "meaningZh": "我（謙稱）",
+        "exampleKo": "저는 학생이에요.",
+        "exampleZh": "我是學生。"
+      },
+      {
+        "id": "greetings-040",
+        "topicId": "greetings",
+        "korean": "우리",
+        "meaningZh": "我們／我們的",
+        "exampleKo": "우리 같이 공부해요.",
+        "exampleZh": "我們一起學習吧。"
       }
     ]
   },
@@ -490,6 +570,86 @@
         "meaningZh": "洋蔥",
         "exampleKo": "양파를 썰어요.",
         "exampleZh": "我切洋蔥。"
+      },
+      {
+        "id": "food-031",
+        "topicId": "food",
+        "korean": "닭고기",
+        "meaningZh": "雞肉",
+        "exampleKo": "저는 닭고기를 좋아해요.",
+        "exampleZh": "我喜歡雞肉。"
+      },
+      {
+        "id": "food-032",
+        "topicId": "food",
+        "korean": "돼지고기",
+        "meaningZh": "豬肉",
+        "exampleKo": "돼지고기를 구워요.",
+        "exampleZh": "我烤豬肉。"
+      },
+      {
+        "id": "food-033",
+        "topicId": "food",
+        "korean": "소고기",
+        "meaningZh": "牛肉",
+        "exampleKo": "소고기를 사요.",
+        "exampleZh": "我買牛肉。"
+      },
+      {
+        "id": "food-034",
+        "topicId": "food",
+        "korean": "오이",
+        "meaningZh": "小黃瓜",
+        "exampleKo": "오이를 씻어요.",
+        "exampleZh": "我洗小黃瓜。"
+      },
+      {
+        "id": "food-035",
+        "topicId": "food",
+        "korean": "당근",
+        "meaningZh": "胡蘿蔔",
+        "exampleKo": "당근을 썰어요.",
+        "exampleZh": "我切胡蘿蔔。"
+      },
+      {
+        "id": "food-036",
+        "topicId": "food",
+        "korean": "토마토",
+        "meaningZh": "番茄",
+        "exampleKo": "토마토가 빨개요.",
+        "exampleZh": "番茄是紅色的。"
+      },
+      {
+        "id": "food-037",
+        "topicId": "food",
+        "korean": "수박",
+        "meaningZh": "西瓜",
+        "exampleKo": "여름에 수박을 먹어요.",
+        "exampleZh": "我夏天吃西瓜。"
+      },
+      {
+        "id": "food-038",
+        "topicId": "food",
+        "korean": "오렌지",
+        "meaningZh": "柳橙",
+        "exampleKo": "오렌지 두 개 주세요.",
+        "exampleZh": "請給我兩顆柳橙。"
+      },
+      {
+        "id": "food-039",
+        "topicId": "food",
+        "korean": "생수",
+        "meaningZh": "瓶裝飲用水",
+        "exampleKo": "편의점에서 생수를 사요.",
+        "exampleZh": "我在便利商店買瓶裝水。"
+      },
+      {
+        "id": "food-040",
+        "topicId": "food",
+        "korean": "메뉴",
+        "meaningZh": "菜單／餐點品項",
+        "exampleKo": "메뉴를 보여 주세요.",
+        "exampleZh": "請讓我看一下菜單。"
       }
     ]
   },
@@ -737,6 +897,86 @@
         "meaningZh": "每天",
         "exampleKo": "매일 한국어를 공부해요.",
         "exampleZh": "我每天學韓文。"
+      },
+      {
+        "id": "time-031",
+        "topicId": "time",
+        "korean": "여섯",
+        "meaningZh": "六（固有數詞）",
+        "exampleKo": "사과가 여섯 개 있어요.",
+        "exampleZh": "有六顆蘋果。"
+      },
+      {
+        "id": "time-032",
+        "topicId": "time",
+        "korean": "일곱",
+        "meaningZh": "七（固有數詞）",
+        "exampleKo": "일곱 시에 일어나요.",
+        "exampleZh": "我七點起床。"
+      },
+      {
+        "id": "time-033",
+        "topicId": "time",
+        "korean": "여덟",
+        "meaningZh": "八（固有數詞）",
+        "exampleKo": "여덟 시에 아침을 먹어요.",
+        "exampleZh": "我八點吃早餐。"
+      },
+      {
+        "id": "time-034",
+        "topicId": "time",
+        "korean": "아홉",
+        "meaningZh": "九（固有數詞）",
+        "exampleKo": "학생이 아홉 명 있어요.",
+        "exampleZh": "有九名學生。"
+      },
+      {
+        "id": "time-035",
+        "topicId": "time",
+        "korean": "열",
+        "meaningZh": "十（固有數詞）",
+        "exampleKo": "책이 열 권 있어요.",
+        "exampleZh": "有十本書。"
+      },
+      {
+        "id": "time-036",
+        "topicId": "time",
+        "korean": "시",
+        "meaningZh": "點／時（表示鐘點）",
+        "exampleKo": "지금 두 시예요.",
+        "exampleZh": "現在是兩點。"
+      },
+      {
+        "id": "time-037",
+        "topicId": "time",
+        "korean": "초",
+        "meaningZh": "秒",
+        "exampleKo": "십 초만 기다려 주세요.",
+        "exampleZh": "請等十秒鐘。"
+      },
+      {
+        "id": "time-038",
+        "topicId": "time",
+        "korean": "밤",
+        "meaningZh": "夜晚",
+        "exampleKo": "밤에 책을 읽어요.",
+        "exampleZh": "我晚上看書。"
+      },
+      {
+        "id": "time-039",
+        "topicId": "time",
+        "korean": "새벽",
+        "meaningZh": "凌晨／黎明時分",
+        "exampleKo": "새벽 다섯 시에 일어나요.",
+        "exampleZh": "我凌晨五點起床。"
+      },
+      {
+        "id": "time-040",
+        "topicId": "time",
+        "korean": "날짜",
+        "meaningZh": "日期",
+        "exampleKo": "날짜를 확인해 주세요.",
+        "exampleZh": "請確認日期。"
       }
     ]
   },
@@ -984,6 +1224,86 @@
         "meaningZh": "行人穿越道／斑馬線",
         "exampleKo": "횡단보도를 건너요.",
         "exampleZh": "我走過斑馬線。"
+      },
+      {
+        "id": "travel-031",
+        "topicId": "travel",
+        "korean": "바다",
+        "meaningZh": "海／大海",
+        "exampleKo": "바다를 보러 가요.",
+        "exampleZh": "我去看海。"
+      },
+      {
+        "id": "travel-032",
+        "topicId": "travel",
+        "korean": "산",
+        "meaningZh": "山",
+        "exampleKo": "주말에 산에 가요.",
+        "exampleZh": "我週末去山上。"
+      },
+      {
+        "id": "travel-033",
+        "topicId": "travel",
+        "korean": "공원",
+        "meaningZh": "公園",
+        "exampleKo": "공원에서 산책해요.",
+        "exampleZh": "我在公園散步。"
+      },
+      {
+        "id": "travel-034",
+        "topicId": "travel",
+        "korean": "박물관",
+        "meaningZh": "博物館",
+        "exampleKo": "박물관에서 사진을 봐요.",
+        "exampleZh": "我在博物館看照片。"
+      },
+      {
+        "id": "travel-035",
+        "topicId": "travel",
+        "korean": "시장",
+        "meaningZh": "市場",
+        "exampleKo": "시장에서 과일을 사요.",
+        "exampleZh": "我在市場買水果。"
+      },
+      {
+        "id": "travel-036",
+        "topicId": "travel",
+        "korean": "백화점",
+        "meaningZh": "百貨公司",
+        "exampleKo": "백화점에서 옷을 사요.",
+        "exampleZh": "我在百貨公司買衣服。"
+      },
+      {
+        "id": "travel-037",
+        "topicId": "travel",
+        "korean": "서점",
+        "meaningZh": "書店",
+        "exampleKo": "서점에서 책을 사요.",
+        "exampleZh": "我在書店買書。"
+      },
+      {
+        "id": "travel-038",
+        "topicId": "travel",
+        "korean": "숙소",
+        "meaningZh": "住宿處",
+        "exampleKo": "숙소가 역 근처에 있어요.",
+        "exampleZh": "住宿處在車站附近。"
+      },
+      {
+        "id": "travel-039",
+        "topicId": "travel",
+        "korean": "위치",
+        "meaningZh": "位置",
+        "exampleKo": "지도에서 호텔 위치를 찾아요.",
+        "exampleZh": "我在地圖上找飯店的位置。"
+      },
+      {
+        "id": "travel-040",
+        "topicId": "travel",
+        "korean": "거리",
+        "meaningZh": "街道",
+        "exampleKo": "이 거리는 조용해요.",
+        "exampleZh": "這條街很安靜。"
       }
     ]
   },
@@ -1231,6 +1551,86 @@
         "meaningZh": "肥皂",
         "exampleKo": "비누로 손을 씻어요.",
         "exampleZh": "我用肥皂洗手。"
+      },
+      {
+        "id": "daily-031",
+        "topicId": "daily",
+        "korean": "수건",
+        "meaningZh": "毛巾",
+        "exampleKo": "수건으로 손을 닦아요.",
+        "exampleZh": "我用毛巾擦手。"
+      },
+      {
+        "id": "daily-032",
+        "topicId": "daily",
+        "korean": "칫솔",
+        "meaningZh": "牙刷",
+        "exampleKo": "새 칫솔을 사요.",
+        "exampleZh": "我買新牙刷。"
+      },
+      {
+        "id": "daily-033",
+        "topicId": "daily",
+        "korean": "치약",
+        "meaningZh": "牙膏",
+        "exampleKo": "칫솔에 치약을 짜요.",
+        "exampleZh": "我把牙膏擠在牙刷上。"
+      },
+      {
+        "id": "daily-034",
+        "topicId": "daily",
+        "korean": "거울",
+        "meaningZh": "鏡子",
+        "exampleKo": "거울을 봐요.",
+        "exampleZh": "我照鏡子。"
+      },
+      {
+        "id": "daily-035",
+        "topicId": "daily",
+        "korean": "안경",
+        "meaningZh": "眼鏡",
+        "exampleKo": "안경을 써요.",
+        "exampleZh": "我戴眼鏡。"
+      },
+      {
+        "id": "daily-036",
+        "topicId": "daily",
+        "korean": "양말",
+        "meaningZh": "襪子",
+        "exampleKo": "양말을 신어요.",
+        "exampleZh": "我穿襪子。"
+      },
+      {
+        "id": "daily-037",
+        "topicId": "daily",
+        "korean": "모자",
+        "meaningZh": "帽子",
+        "exampleKo": "모자를 써요.",
+        "exampleZh": "我戴帽子。"
+      },
+      {
+        "id": "daily-038",
+        "topicId": "daily",
+        "korean": "신문",
+        "meaningZh": "報紙",
+        "exampleKo": "아침에 신문을 읽어요.",
+        "exampleZh": "我早上讀報紙。"
+      },
+      {
+        "id": "daily-039",
+        "topicId": "daily",
+        "korean": "텔레비전",
+        "meaningZh": "電視",
+        "exampleKo": "저녁에 텔레비전을 봐요.",
+        "exampleZh": "我晚上看電視。"
+      },
+      {
+        "id": "daily-040",
+        "topicId": "daily",
+        "korean": "청소",
+        "meaningZh": "打掃／清潔",
+        "exampleKo": "주말에 방 청소를 해요.",
+        "exampleZh": "我週末打掃房間。"
       }
     ]
   }
