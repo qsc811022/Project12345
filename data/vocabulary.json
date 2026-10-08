@@ -163,6 +163,86 @@
         "meaningZh": "請幫幫我",
         "exampleKo": "좀 도와주세요.",
         "exampleZh": "請幫我一下。"
+      },
+      {
+        "id": "greetings-021",
+        "topicId": "greetings",
+        "korean": "정말",
+        "meaningZh": "真的／非常",
+        "exampleKo": "정말 맛있어요.",
+        "exampleZh": "真的很好吃。"
+      },
+      {
+        "id": "greetings-022",
+        "topicId": "greetings",
+        "korean": "조금",
+        "meaningZh": "一點／稍微",
+        "exampleKo": "한국어를 조금 알아요.",
+        "exampleZh": "我懂一點韓文。"
+      },
+      {
+        "id": "greetings-023",
+        "topicId": "greetings",
+        "korean": "많이",
+        "meaningZh": "很多／多多地",
+        "exampleKo": "물을 많이 마셔요.",
+        "exampleZh": "我喝很多水。"
+      },
+      {
+        "id": "greetings-024",
+        "topicId": "greetings",
+        "korean": "좋아요",
+        "meaningZh": "好／不錯",
+        "exampleKo": "이 노래가 좋아요.",
+        "exampleZh": "這首歌很好聽。"
+      },
+      {
+        "id": "greetings-025",
+        "topicId": "greetings",
+        "korean": "싫어요",
+        "meaningZh": "不喜歡／討厭",
+        "exampleKo": "저는 매운 음식이 싫어요.",
+        "exampleZh": "我不喜歡辣的食物。"
+      },
+      {
+        "id": "greetings-026",
+        "topicId": "greetings",
+        "korean": "미안해요",
+        "meaningZh": "對不起（禮貌但較不正式）",
+        "exampleKo": "늦어서 미안해요.",
+        "exampleZh": "對不起，我遲到了。"
+      },
+      {
+        "id": "greetings-027",
+        "topicId": "greetings",
+        "korean": "고마워요",
+        "meaningZh": "謝謝（禮貌但較不正式）",
+        "exampleKo": "도와줘서 고마워요.",
+        "exampleZh": "謝謝你幫忙。"
+      },
+      {
+        "id": "greetings-028",
+        "topicId": "greetings",
+        "korean": "실례합니다",
+        "meaningZh": "不好意思／打擾了",
+        "exampleKo": "실례합니다. 화장실이 어디예요?",
+        "exampleZh": "不好意思，洗手間在哪裡？"
+      },
+      {
+        "id": "greetings-029",
+        "topicId": "greetings",
+        "korean": "축하합니다",
+        "meaningZh": "恭喜／祝賀",
+        "exampleKo": "졸업을 축하합니다.",
+        "exampleZh": "恭喜畢業。"
+      },
+      {
+        "id": "greetings-030",
+        "topicId": "greetings",
+        "korean": "잘 부탁드립니다",
+        "meaningZh": "請多多指教／麻煩您了（正式敬語）",
+        "exampleKo": "앞으로 잘 부탁드립니다.",
+        "exampleZh": "今後請多多指教。"
       }
     ]
   },
@@ -330,6 +410,86 @@
         "meaningZh": "糖／砂糖",
         "exampleKo": "커피에 설탕을 넣어요.",
         "exampleZh": "我在咖啡裡加糖。"
+      },
+      {
+        "id": "food-021",
+        "topicId": "food",
+        "korean": "떡",
+        "meaningZh": "韓式年糕／米糕",
+        "exampleKo": "떡을 먹어요.",
+        "exampleZh": "我吃韓式年糕。"
+      },
+      {
+        "id": "food-022",
+        "topicId": "food",
+        "korean": "만두",
+        "meaningZh": "餃子",
+        "exampleKo": "만두 두 개 주세요.",
+        "exampleZh": "請給我兩個餃子。"
+      },
+      {
+        "id": "food-023",
+        "topicId": "food",
+        "korean": "국수",
+        "meaningZh": "麵／麵條",
+        "exampleKo": "점심에 국수를 먹어요.",
+        "exampleZh": "我午餐吃麵。"
+      },
+      {
+        "id": "food-024",
+        "topicId": "food",
+        "korean": "치즈",
+        "meaningZh": "起司",
+        "exampleKo": "빵에 치즈를 넣어요.",
+        "exampleZh": "我在麵包裡放起司。"
+      },
+      {
+        "id": "food-025",
+        "topicId": "food",
+        "korean": "요구르트",
+        "meaningZh": "優格／發酵乳",
+        "exampleKo": "아침에 요구르트를 먹어요.",
+        "exampleZh": "我早上吃優格。"
+      },
+      {
+        "id": "food-026",
+        "topicId": "food",
+        "korean": "바나나",
+        "meaningZh": "香蕉",
+        "exampleKo": "바나나 한 개 주세요.",
+        "exampleZh": "請給我一根香蕉。"
+      },
+      {
+        "id": "food-027",
+        "topicId": "food",
+        "korean": "딸기",
+        "meaningZh": "草莓",
+        "exampleKo": "딸기가 달아요.",
+        "exampleZh": "草莓很甜。"
+      },
+      {
+        "id": "food-028",
+        "topicId": "food",
+        "korean": "포도",
+        "meaningZh": "葡萄",
+        "exampleKo": "포도를 씻어요.",
+        "exampleZh": "我洗葡萄。"
+      },
+      {
+        "id": "food-029",
+        "topicId": "food",
+        "korean": "감자",
+        "meaningZh": "馬鈴薯",
+        "exampleKo": "감자를 삶아요.",
+        "exampleZh": "我把馬鈴薯煮熟。"
+      },
+      {
+        "id": "food-030",
+        "topicId": "food",
+        "korean": "양파",
+        "meaningZh": "洋蔥",
+        "exampleKo": "양파를 썰어요.",
+        "exampleZh": "我切洋蔥。"
       }
     ]
   },
@@ -497,6 +657,86 @@
         "meaningZh": "分鐘",
         "exampleKo": "오 분만 기다려 주세요.",
         "exampleZh": "請等五分鐘。"
+      },
+      {
+        "id": "time-021",
+        "topicId": "time",
+        "korean": "월요일",
+        "meaningZh": "星期一",
+        "exampleKo": "월요일에 학교에 가요.",
+        "exampleZh": "我星期一去學校。"
+      },
+      {
+        "id": "time-022",
+        "topicId": "time",
+        "korean": "화요일",
+        "meaningZh": "星期二",
+        "exampleKo": "화요일에 친구를 만나요.",
+        "exampleZh": "我星期二和朋友見面。"
+      },
+      {
+        "id": "time-023",
+        "topicId": "time",
+        "korean": "수요일",
+        "meaningZh": "星期三",
+        "exampleKo": "수요일에 한국어를 공부해요.",
+        "exampleZh": "我星期三學韓文。"
+      },
+      {
+        "id": "time-024",
+        "topicId": "time",
+        "korean": "목요일",
+        "meaningZh": "星期四",
+        "exampleKo": "목요일에 운동해요.",
+        "exampleZh": "我星期四運動。"
+      },
+      {
+        "id": "time-025",
+        "topicId": "time",
+        "korean": "금요일",
+        "meaningZh": "星期五",
+        "exampleKo": "금요일에 영화를 봐요.",
+        "exampleZh": "我星期五看電影。"
+      },
+      {
+        "id": "time-026",
+        "topicId": "time",
+        "korean": "토요일",
+        "meaningZh": "星期六",
+        "exampleKo": "토요일에 시장에 가요.",
+        "exampleZh": "我星期六去市場。"
+      },
+      {
+        "id": "time-027",
+        "topicId": "time",
+        "korean": "일요일",
+        "meaningZh": "星期日",
+        "exampleKo": "일요일에는 집에서 쉬어요.",
+        "exampleZh": "我星期日在家休息。"
+      },
+      {
+        "id": "time-028",
+        "topicId": "time",
+        "korean": "이번 주",
+        "meaningZh": "這星期／本週",
+        "exampleKo": "이번 주는 바빠요.",
+        "exampleZh": "這星期很忙。"
+      },
+      {
+        "id": "time-029",
+        "topicId": "time",
+        "korean": "다음 주",
+        "meaningZh": "下星期／下週",
+        "exampleKo": "다음 주에 만나요.",
+        "exampleZh": "下星期見。"
+      },
+      {
+        "id": "time-030",
+        "topicId": "time",
+        "korean": "매일",
+        "meaningZh": "每天",
+        "exampleKo": "매일 한국어를 공부해요.",
+        "exampleZh": "我每天學韓文。"
       }
     ]
   },
@@ -664,6 +904,86 @@
         "meaningZh": "旅行",
         "exampleKo": "한국 여행을 준비해요.",
         "exampleZh": "我正在準備去韓國旅行。"
+      },
+      {
+        "id": "travel-021",
+        "topicId": "travel",
+        "korean": "화장실",
+        "meaningZh": "洗手間／廁所",
+        "exampleKo": "화장실이 어디에 있어요?",
+        "exampleZh": "洗手間在哪裡？"
+      },
+      {
+        "id": "travel-022",
+        "topicId": "travel",
+        "korean": "병원",
+        "meaningZh": "醫院",
+        "exampleKo": "병원에 가요.",
+        "exampleZh": "我去醫院。"
+      },
+      {
+        "id": "travel-023",
+        "topicId": "travel",
+        "korean": "약국",
+        "meaningZh": "藥局",
+        "exampleKo": "약국에서 약을 사요.",
+        "exampleZh": "我在藥局買藥。"
+      },
+      {
+        "id": "travel-024",
+        "topicId": "travel",
+        "korean": "편의점",
+        "meaningZh": "便利商店",
+        "exampleKo": "편의점에서 물을 사요.",
+        "exampleZh": "我在便利商店買水。"
+      },
+      {
+        "id": "travel-025",
+        "topicId": "travel",
+        "korean": "식당",
+        "meaningZh": "餐廳",
+        "exampleKo": "이 식당은 음식이 맛있어요.",
+        "exampleZh": "這家餐廳的食物很好吃。"
+      },
+      {
+        "id": "travel-026",
+        "topicId": "travel",
+        "korean": "은행",
+        "meaningZh": "銀行",
+        "exampleKo": "은행이 어디예요?",
+        "exampleZh": "銀行在哪裡？"
+      },
+      {
+        "id": "travel-027",
+        "topicId": "travel",
+        "korean": "우체국",
+        "meaningZh": "郵局",
+        "exampleKo": "우체국에서 편지를 보내요.",
+        "exampleZh": "我在郵局寄信。"
+      },
+      {
+        "id": "travel-028",
+        "topicId": "travel",
+        "korean": "길",
+        "meaningZh": "路／道路",
+        "exampleKo": "길을 잃었어요.",
+        "exampleZh": "我迷路了。"
+      },
+      {
+        "id": "travel-029",
+        "topicId": "travel",
+        "korean": "주소",
+        "meaningZh": "地址",
+        "exampleKo": "호텔 주소를 알려 주세요.",
+        "exampleZh": "請告訴我飯店的地址。"
+      },
+      {
+        "id": "travel-030",
+        "topicId": "travel",
+        "korean": "횡단보도",
+        "meaningZh": "行人穿越道／斑馬線",
+        "exampleKo": "횡단보도를 건너요.",
+        "exampleZh": "我走過斑馬線。"
       }
     ]
   },
@@ -831,6 +1151,86 @@
         "meaningZh": "照片",
         "exampleKo": "사진을 찍어요.",
         "exampleZh": "我拍照片。"
+      },
+      {
+        "id": "daily-021",
+        "topicId": "daily",
+        "korean": "컴퓨터",
+        "meaningZh": "電腦",
+        "exampleKo": "컴퓨터로 공부해요.",
+        "exampleZh": "我用電腦學習。"
+      },
+      {
+        "id": "daily-022",
+        "topicId": "daily",
+        "korean": "휴대폰",
+        "meaningZh": "手機",
+        "exampleKo": "휴대폰으로 사진을 찍어요.",
+        "exampleZh": "我用手機拍照。"
+      },
+      {
+        "id": "daily-023",
+        "topicId": "daily",
+        "korean": "열쇠",
+        "meaningZh": "鑰匙",
+        "exampleKo": "열쇠가 가방 안에 있어요.",
+        "exampleZh": "鑰匙在包包裡。"
+      },
+      {
+        "id": "daily-024",
+        "topicId": "daily",
+        "korean": "지갑",
+        "meaningZh": "錢包",
+        "exampleKo": "지갑을 찾고 있어요.",
+        "exampleZh": "我正在找錢包。"
+      },
+      {
+        "id": "daily-025",
+        "topicId": "daily",
+        "korean": "우산",
+        "meaningZh": "雨傘",
+        "exampleKo": "비가 와서 우산을 써요.",
+        "exampleZh": "因為下雨，所以我撐傘。"
+      },
+      {
+        "id": "daily-026",
+        "topicId": "daily",
+        "korean": "시계",
+        "meaningZh": "時鐘／手錶",
+        "exampleKo": "벽에 시계가 있어요.",
+        "exampleZh": "牆上有時鐘。"
+      },
+      {
+        "id": "daily-027",
+        "topicId": "daily",
+        "korean": "침대",
+        "meaningZh": "床",
+        "exampleKo": "침대에서 자요.",
+        "exampleZh": "我在床上睡覺。"
+      },
+      {
+        "id": "daily-028",
+        "topicId": "daily",
+        "korean": "냉장고",
+        "meaningZh": "冰箱",
+        "exampleKo": "우유를 냉장고에 넣어요.",
+        "exampleZh": "我把牛奶放進冰箱。"
+      },
+      {
+        "id": "daily-029",
+        "topicId": "daily",
+        "korean": "세탁기",
+        "meaningZh": "洗衣機",
+        "exampleKo": "세탁기로 옷을 빨아요.",
+        "exampleZh": "我用洗衣機洗衣服。"
+      },
+      {
+        "id": "daily-030",
+        "topicId": "daily",
+        "korean": "비누",
+        "meaningZh": "肥皂",
+        "exampleKo": "비누로 손을 씻어요.",
+        "exampleZh": "我用肥皂洗手。"
       }
     ]
   }

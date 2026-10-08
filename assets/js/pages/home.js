@@ -13,6 +13,7 @@ const REGIONS = [
 export function homePage(ctx) {
   const { data, store, lessons } = ctx;
   const state = store.state;
+  const wordCount = data.vocabulary.reduce((total, topic) => total + topic.words.length, 0);
   const completed = state.completedLessonIds.length;
   const next = lessons.find(lesson => !state.completedLessonIds.includes(lesson.id));
   const nextRoute = next ? ctx.routeForId(next.id) : '#/quiz';
@@ -23,7 +24,7 @@ export function homePage(ctx) {
       el('h1', { class: 'page-title', tabindex: '-1' }, '零基礎也能，', el('br'), el('em', {}, '玩出你的韓文力！')),
       el('p', { class: 'description' }, '穿過字母森林、逛逛單字市集。每天完成一個小任務，讓韓文成為你的新技能。'),
       el('div', { class: 'actions' }, link(completed ? next ? '繼續冒險 →' : '前往練習 →' : '開始冒險 →', nextRoute), link('探索地圖 ↓', '#/home', true)),
-      el('p', { class: 'hero-footnote' }, '15 個學習單元 · 100 個生活單字 · 依自己的步調探索')),
+      el('p', { class: 'hero-footnote' }, `${lessons.length} 個學習單元 · ${wordCount} 個生活單字 · 依自己的步調探索`)),
     el('div', { class: 'hero-scene' },
       el('span', { class: 'scene-word word-one', lang: 'ko' }, '안녕!'),
       el('img', { class: 'adventure-mascot', src: './assets/images/adventure-mascot.svg', alt: '背著小背包、揮手出發的韓文字母探險夥伴', width: 360, height: 290 }),
