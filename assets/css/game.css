@@ -1,4 +1,30 @@
 /* Adventure theme: shared controls, map, and learning screens. */
+.quick-start { background: #fffdf7; }
+.starter-steps { list-style: none; display: grid; gap: 16px; padding: 0; margin: 0; }
+.starter-steps li { padding: 24px; border: 1px solid #ded5ec; border-radius: 20px; background: white; display: flex; flex-direction: column; align-items: flex-start; }
+.starter-steps li:nth-child(2) { background: #f3edff; border-color: #b59cd9; }
+.step-number { color: #7050b4; font-weight: 800; letter-spacing: .12em; margin-bottom: 14px; }
+.starter-steps h3 { font-size: 1.1rem; }
+.starter-steps p { color: var(--color-text-muted); flex: 1; }
+.starter-steps .button { font-size: .85rem; }
+.word-practice { padding: 24px; border: 2px solid #c8b4e6; border-radius: 24px; background: linear-gradient(135deg, #f1e8ff, #fffcf4); margin: 24px 0 48px; }
+.word-practice .eyebrow { margin-bottom: 16px; }
+.flash-word { text-align: center; font-size: clamp(2rem, 6vw, 3.5rem); margin: 30px 0 18px; overflow-wrap: anywhere; }
+.word-practice > .muted { text-align: center; }
+.flash-tools { justify-content: center; margin-bottom: 24px; }
+.flash-answer { padding: 20px; background: #ffffffd9; border-radius: 16px; margin-bottom: 20px; }
+.flash-answer .meaning { font-size: 1.3rem; font-weight: 750; }
+.flash-answer .example-block { margin-bottom: 0; }
+.word-search { display: grid; gap: 10px; margin-bottom: 20px; }
+.word-search > label:first-child { font-weight: 700; }
+.word-search input[type="search"] { width: 100%; min-width: 0; padding: 12px 16px; border: 2px solid #b9a9cf; border-radius: 12px; background: white; color: var(--color-text); }
+.favorite-filter { display: flex; gap: 10px; align-items: center; min-height: 44px; width: fit-content; }
+.favorite-filter input { width: 20px; height: 20px; accent-color: #7050b4; }
+.word-pager { justify-content: center; margin-top: 32px; }
+.word-library .vocabulary-card { min-width: 0; overflow-wrap: anywhere; }
+.quiz-help { font-weight: 650; color: var(--color-accent); margin-top: 20px; }
+@media (min-width: 800px) { .starter-steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } .word-practice { padding: 32px; } }
+@media (max-width: 400px) { .word-practice { padding: 18px; } .flash-ratings .button { width: 100%; } .word-pager { gap: 10px; } }
 body { background-image: radial-gradient(#cdbce6 1px, transparent 1px); background-size: 20px 20px; }
 ::selection { background: #e0d4fa; }
 #main { border: 1px solid var(--color-border); border-radius: 28px; overflow: clip; }

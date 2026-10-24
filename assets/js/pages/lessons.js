@@ -1,6 +1,7 @@
 import { el, ko, mixedText, hero, link, progressBar } from '../components/dom.js';
 import { completeControl, vocabularyCard, sentenceCard, grammarCard } from '../components/learning.js';
 import { speakButton, speechNote } from '../speech.js';
+import { wordPractice, wordLibrary } from '../components/word-practice.js';
 const pageInfo = {
   alphabet: ['HANGUL / THE BEGINNING', '從字母開始，讀懂韓文。', '認識字母、練習組字，再一起跨過收音這一小步。', ['ㄱ ㄴ ㄷ', 'ㅏ ㅓ ㅗ', 'ㄲ ㅘ ㅢ', 'ㅎ + ㅏ + ㄴ', '받침']],
   vocabulary: ['WORDS / EVERYDAY LIFE', '讓單字，走進生活。', '五個生活主題。讀一個單字、看一句例句，把想複習的字收藏起來。', ['안녕', '밥', '오늘', '여행', '일상']],
@@ -15,7 +16,7 @@ export function lessonPage(ctx, kind, id) {
     store.visit(id);
     const body = el('section', { class: 'section' }, el('a', { class: 'back-link', href: `#/${kind}` }, '← 返回單元列表'), speechNote());
     if (kind === 'alphabet') body.append(el('div', { class: 'letter-grid' }, unit.items.map(item => el('article', { class: 'card letter-card' }, el('span', { class: 'badge' }, item.type), ko(item.character, 'h2'), el('p', { class: 'explanation' }, mixedText(item.explanation)), el('p', { class: 'example' }, mixedText(item.example)), speakButton(item.example.split('（')[0].split(' → ')[0])))));
-    if (kind === 'vocabulary') body.append(el('div', { class: 'grid' }, unit.words.map(w => vocabularyCard(w, store))));
+    if (kind === 'vocabulary') body.append(wordPractice(unit.words, store), el('h2', { class: 'section-title' }, '本單元單字庫'), el('p', { class: 'muted' }, '練習後可以搜尋、收藏單字；學完整個主題，再到頁面下方標記完成。'), wordLibrary([unit], store));
     if (kind === 'sentences') body.append(el('div', { class: 'stack' }, unit.sentences.map(sentenceCard)));
     body.append(completeControl(id, store));
     const units = data[kind]; const next = units[units.indexOf(unit) + 1];
@@ -29,7 +30,8 @@ export function lessonPage(ctx, kind, id) {
     const count = kind === 'alphabet' ? `${unit.items.length} 個學習項目 · ${unit.estimatedMinutes} 分鐘` : kind === 'vocabulary' ? `${unit.words.length} 個單字` : `${unit.sentences.length} 個句型`;
     return el('a', { class: 'card', href: `#/${kind}/${unit.id}` }, el('div', { class: 'card-top' }, el('span', { class: 'number' }, `UNIT 0${i + 1}`), complete && el('span', { class: 'badge complete' }, '✓ 已完成')), ko(symbols[i], 'div', { class: 'lesson-symbol', 'aria-hidden': 'true' }), el('h2', { style: 'font-size:1.25rem' }, unit.title), el('p', { class: 'muted' }, count), el('p', {}, '進入單元 →'));
   })));
-  if (kind !== 'alphabet') {
+  if (kind === 'vocabulary') body.append(el('div', { class: 'lesson-end' }, el('h2', { class: 'section-title' }, '找找想學的單字'), el('p', { class: 'muted' }, '選上方主題，開始每次 5 字練習；也可以在這裡搜尋與收藏。'), speechNote(), wordLibrary(data.vocabulary, store)));
+  if (kind === 'sentences') {
     const content = el('div', {}); let selected = 'all';
     const filters = el('div', { class: 'filters', role: 'group', 'aria-label': '教材分類篩選' });
     const filterRows = [['all', '全部'], ...data[kind].map(u => [u.id, u.title])];

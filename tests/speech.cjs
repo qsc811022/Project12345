@@ -25,7 +25,7 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
       }, test.voices);
       const page = await context.newPage();
       await page.goto(base + '#/vocabulary/food');
-      const control = page.getByRole('button', { name: '朗讀：물', exact: true });
+      const control = page.locator('.word-practice').getByRole('button', { name: '朗讀：물', exact: true });
       await control.waitFor();
       if (test.delayed) {
         assert(await control.isDisabled());

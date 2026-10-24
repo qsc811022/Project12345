@@ -15,7 +15,7 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
   try {
     await check('GitHub Pages 子路徑資源、首頁與邏輯測試', async () => {
       await go('#/home'); assert.match(await page.title(), /韓文起步/); assert.equal(await page.locator('main h1').count(), 1);
-      assert.match(await page.locator('.hero-footnote').innerText(), /200 個生活單字/);
+      assert.match(await page.locator('.hero-footnote').innerText(), /250 個生活單字/);
       assert.equal(await page.locator('.showcase-card img').count(), 4);
       await page.waitForFunction(() => [...document.querySelectorAll('.boss-portrait')].length === 2 && [...document.querySelectorAll('.boss-portrait')].every(img => img.complete && img.naturalWidth > 0));
       assert.equal(await page.locator('.boss-invitation a').getAttribute('href'), '#/quiz');
@@ -43,10 +43,13 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
       await go('#/alphabet/basic-consonants'); await page.getByRole('button', { name: '○ 標記為已完成', exact: true }).click();
       await go('#/grammar/eun-neun'); await page.getByRole('button', { name: '○ 標記為已讀', exact: true }).click();
       await go('#/vocabulary/food');
-      assert.equal(await page.locator('.vocabulary-card').count(), 40);
+      assert.equal(await page.locator('.vocabulary-card').count(), 12);
+      await page.getByRole('searchbox').fill('메뉴');
       await page.getByRole('button', { name: '收藏 메뉴', exact: true }).click(); await page.reload();
+      await page.getByRole('searchbox').fill('메뉴');
       await page.getByRole('button', { name: '取消收藏 메뉴', exact: true }).click();
-      await page.getByRole('button', { name: '收藏 물', exact: true }).click(); await page.reload(); await page.getByRole('button', { name: '取消收藏 물', exact: true }).waitFor();
+      await page.getByRole('searchbox').fill('');
+      await page.locator('.word-library').getByRole('button', { name: '收藏 물', exact: true }).click(); await page.reload(); await page.locator('.word-library').getByRole('button', { name: '取消收藏 물', exact: true }).waitFor();
       const saved = await state(); assert.equal(saved.completedLessonIds.length, 1); assert.equal(saved.readGrammarIds.length, 1); assert.equal(saved.favoriteWordIds.length, 1);
       await go('#/home'); assert.equal(await page.locator('.stat strong').first().innerText(), '7%');
       assert.equal(await page.locator('.map-region').first().locator('.region-count').innerText(), '1 / 5 單元完成');
@@ -138,7 +141,7 @@ const base = process.env.TEST_URL || 'http://127.0.0.1:4173/korean-start/';
         window.speechSynthesis.cancel = () => window.speechCalls.push('cancel');
         window.speechSynthesis.speak = utterance => window.speechCalls.push({ text: utterance.text, lang: utterance.lang, rate: utterance.rate });
       });
-      const speechPage = await speechContext.newPage(); await speechPage.goto(base + '#/vocabulary/food'); await speechPage.getByRole('button', { name: '朗讀：물', exact: true }).click(); const calls = await speechPage.evaluate(() => window.speechCalls); assert.equal(calls.at(-2), 'cancel'); assert.equal(calls.at(-1).lang, 'ko-KR'); assert.equal(calls.at(-1).text, '물'); await speechContext.close();
+      const speechPage = await speechContext.newPage(); await speechPage.goto(base + '#/vocabulary/food'); await speechPage.locator('.word-practice').getByRole('button', { name: '朗讀：물', exact: true }).click(); const calls = await speechPage.evaluate(() => window.speechCalls); assert.equal(calls.at(-2), 'cancel'); assert.equal(calls.at(-1).lang, 'ko-KR'); assert.equal(calls.at(-1).text, '물'); await speechContext.close();
     });
     await check('測驗重新整理原生提示可取消', async () => {
       await go('#/quiz'); await page.getByRole('button', { name: '開始測驗 →', exact: true }).click();

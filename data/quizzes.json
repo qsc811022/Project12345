@@ -1123,5 +1123,1255 @@
     ],
     "correctOptionId": "sentences-q-15-o-1",
     "explanation": "方向加 으로，再用 가세요 禮貌地指示前進。"
+  },
+  {
+    "id": "vocabulary-greetings-41",
+    "bank": "vocabulary",
+    "prompt": "「어서 오세요」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-41-o-1",
+        "text": "歡迎光臨"
+      },
+      {
+        "id": "vocabulary-greetings-41-o-2",
+        "text": "我開動了（用餐前）"
+      },
+      {
+        "id": "vocabulary-greetings-41-o-3",
+        "text": "謝謝招待（用餐後）"
+      },
+      {
+        "id": "vocabulary-greetings-41-o-4",
+        "text": "晚安／睡個好覺"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-41-o-1",
+    "explanation": "「어서 오세요」表示「歡迎光臨」。例句：어서 오세요. 여기 앉으세요.（歡迎光臨，請坐這裡。）"
+  },
+  {
+    "id": "vocabulary-greetings-42",
+    "bank": "vocabulary",
+    "prompt": "「잘 먹겠습니다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-42-o-1",
+        "text": "我開動了（用餐前）"
+      },
+      {
+        "id": "vocabulary-greetings-42-o-2",
+        "text": "謝謝招待（用餐後）"
+      },
+      {
+        "id": "vocabulary-greetings-42-o-3",
+        "text": "晚安／睡個好覺"
+      },
+      {
+        "id": "vocabulary-greetings-42-o-4",
+        "text": "下次見"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-42-o-1",
+    "explanation": "「잘 먹겠습니다」表示「我開動了（用餐前）」。例句：잘 먹겠습니다. 감사합니다.（我開動了，謝謝。）"
+  },
+  {
+    "id": "vocabulary-greetings-43",
+    "bank": "vocabulary",
+    "prompt": "「잘 먹었습니다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-43-o-1",
+        "text": "謝謝招待（用餐後）"
+      },
+      {
+        "id": "vocabulary-greetings-43-o-2",
+        "text": "晚安／睡個好覺"
+      },
+      {
+        "id": "vocabulary-greetings-43-o-3",
+        "text": "下次見"
+      },
+      {
+        "id": "vocabulary-greetings-43-o-4",
+        "text": "好久不見"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-43-o-1",
+    "explanation": "「잘 먹었습니다」表示「謝謝招待（用餐後）」。例句：잘 먹었습니다. 정말 맛있었어요.（謝謝招待，真的很好吃。）"
+  },
+  {
+    "id": "vocabulary-greetings-44",
+    "bank": "vocabulary",
+    "prompt": "「잘 자요」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-44-o-1",
+        "text": "晚安／睡個好覺"
+      },
+      {
+        "id": "vocabulary-greetings-44-o-2",
+        "text": "下次見"
+      },
+      {
+        "id": "vocabulary-greetings-44-o-3",
+        "text": "好久不見"
+      },
+      {
+        "id": "vocabulary-greetings-44-o-4",
+        "text": "歡迎"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-44-o-1",
+    "explanation": "「잘 자요」表示「晚安／睡個好覺」。例句：잘 자요. 내일 만나요.（晚安，明天見。）"
+  },
+  {
+    "id": "vocabulary-greetings-45",
+    "bank": "vocabulary",
+    "prompt": "「또 만나요」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-45-o-1",
+        "text": "下次見"
+      },
+      {
+        "id": "vocabulary-greetings-45-o-2",
+        "text": "好久不見"
+      },
+      {
+        "id": "vocabulary-greetings-45-o-3",
+        "text": "歡迎"
+      },
+      {
+        "id": "vocabulary-greetings-45-o-4",
+        "text": "當然"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-45-o-1",
+    "explanation": "「또 만나요」表示「下次見」。例句：다음 주에 또 만나요.（下週再見。）"
+  },
+  {
+    "id": "vocabulary-greetings-46",
+    "bank": "vocabulary",
+    "prompt": "「오랜만이에요」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-46-o-1",
+        "text": "好久不見"
+      },
+      {
+        "id": "vocabulary-greetings-46-o-2",
+        "text": "歡迎"
+      },
+      {
+        "id": "vocabulary-greetings-46-o-3",
+        "text": "當然"
+      },
+      {
+        "id": "vocabulary-greetings-46-o-4",
+        "text": "先／首先"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-46-o-1",
+    "explanation": "「오랜만이에요」表示「好久不見」。例句：오랜만이에요. 잘 지냈어요?（好久不見，最近過得好嗎？）"
+  },
+  {
+    "id": "vocabulary-greetings-47",
+    "bank": "vocabulary",
+    "prompt": "「환영합니다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-47-o-1",
+        "text": "歡迎"
+      },
+      {
+        "id": "vocabulary-greetings-47-o-2",
+        "text": "當然"
+      },
+      {
+        "id": "vocabulary-greetings-47-o-3",
+        "text": "先／首先"
+      },
+      {
+        "id": "vocabulary-greetings-47-o-4",
+        "text": "一起"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-47-o-1",
+    "explanation": "「환영합니다」表示「歡迎」。例句：한국에 오신 것을 환영합니다.（歡迎來到韓國。）"
+  },
+  {
+    "id": "vocabulary-greetings-48",
+    "bank": "vocabulary",
+    "prompt": "「물론이에요」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-48-o-1",
+        "text": "當然"
+      },
+      {
+        "id": "vocabulary-greetings-48-o-2",
+        "text": "先／首先"
+      },
+      {
+        "id": "vocabulary-greetings-48-o-3",
+        "text": "一起"
+      },
+      {
+        "id": "vocabulary-greetings-48-o-4",
+        "text": "歡迎光臨"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-48-o-1",
+    "explanation": "「물론이에요」表示「當然」。例句：물론이에요. 같이 가요.（當然，一起去吧。）"
+  },
+  {
+    "id": "vocabulary-greetings-49",
+    "bank": "vocabulary",
+    "prompt": "「먼저」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-49-o-1",
+        "text": "先／首先"
+      },
+      {
+        "id": "vocabulary-greetings-49-o-2",
+        "text": "一起"
+      },
+      {
+        "id": "vocabulary-greetings-49-o-3",
+        "text": "歡迎光臨"
+      },
+      {
+        "id": "vocabulary-greetings-49-o-4",
+        "text": "我開動了（用餐前）"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-49-o-1",
+    "explanation": "「먼저」表示「先／首先」。例句：먼저 이름을 말해 주세요.（請先說您的名字。）"
+  },
+  {
+    "id": "vocabulary-greetings-50",
+    "bank": "vocabulary",
+    "prompt": "「함께」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-greetings-50-o-1",
+        "text": "一起"
+      },
+      {
+        "id": "vocabulary-greetings-50-o-2",
+        "text": "歡迎光臨"
+      },
+      {
+        "id": "vocabulary-greetings-50-o-3",
+        "text": "我開動了（用餐前）"
+      },
+      {
+        "id": "vocabulary-greetings-50-o-4",
+        "text": "謝謝招待（用餐後）"
+      }
+    ],
+    "correctOptionId": "vocabulary-greetings-50-o-1",
+    "explanation": "「함께」表示「一起」。例句：함께 한국어를 공부해요.（一起學韓語。）"
+  },
+  {
+    "id": "vocabulary-food-41",
+    "bank": "vocabulary",
+    "prompt": "「메뉴판」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-41-o-1",
+        "text": "菜單（紙本／看板）"
+      },
+      {
+        "id": "vocabulary-food-41-o-2",
+        "text": "點餐／訂購"
+      },
+      {
+        "id": "vocabulary-food-41-o-3",
+        "text": "結帳／計算"
+      },
+      {
+        "id": "vocabulary-food-41-o-4",
+        "text": "湯匙"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-41-o-1",
+    "explanation": "「메뉴판」表示「菜單（紙本／看板）」。例句：메뉴판 좀 주세요.（請給我菜單。）"
+  },
+  {
+    "id": "vocabulary-food-42",
+    "bank": "vocabulary",
+    "prompt": "「주문」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-42-o-1",
+        "text": "點餐／訂購"
+      },
+      {
+        "id": "vocabulary-food-42-o-2",
+        "text": "結帳／計算"
+      },
+      {
+        "id": "vocabulary-food-42-o-3",
+        "text": "湯匙"
+      },
+      {
+        "id": "vocabulary-food-42-o-4",
+        "text": "筷子"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-42-o-1",
+    "explanation": "「주문」表示「點餐／訂購」。例句：주문 도와드릴까요?（需要幫您點餐嗎？）"
+  },
+  {
+    "id": "vocabulary-food-43",
+    "bank": "vocabulary",
+    "prompt": "「계산」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-43-o-1",
+        "text": "結帳／計算"
+      },
+      {
+        "id": "vocabulary-food-43-o-2",
+        "text": "湯匙"
+      },
+      {
+        "id": "vocabulary-food-43-o-3",
+        "text": "筷子"
+      },
+      {
+        "id": "vocabulary-food-43-o-4",
+        "text": "盤子"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-43-o-1",
+    "explanation": "「계산」表示「結帳／計算」。例句：계산해 주세요.（請幫我結帳。）"
+  },
+  {
+    "id": "vocabulary-food-44",
+    "bank": "vocabulary",
+    "prompt": "「숟가락」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-44-o-1",
+        "text": "湯匙"
+      },
+      {
+        "id": "vocabulary-food-44-o-2",
+        "text": "筷子"
+      },
+      {
+        "id": "vocabulary-food-44-o-3",
+        "text": "盤子"
+      },
+      {
+        "id": "vocabulary-food-44-o-4",
+        "text": "杯子"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-44-o-1",
+    "explanation": "「숟가락」表示「湯匙」。例句：숟가락 하나 주세요.（請給我一支湯匙。）"
+  },
+  {
+    "id": "vocabulary-food-45",
+    "bank": "vocabulary",
+    "prompt": "「젓가락」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-45-o-1",
+        "text": "筷子"
+      },
+      {
+        "id": "vocabulary-food-45-o-2",
+        "text": "盤子"
+      },
+      {
+        "id": "vocabulary-food-45-o-3",
+        "text": "杯子"
+      },
+      {
+        "id": "vocabulary-food-45-o-4",
+        "text": "很好吃"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-45-o-1",
+    "explanation": "「젓가락」表示「筷子」。例句：젓가락으로 밥을 먹어요.（用筷子吃飯。）"
+  },
+  {
+    "id": "vocabulary-food-46",
+    "bank": "vocabulary",
+    "prompt": "「접시」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-46-o-1",
+        "text": "盤子"
+      },
+      {
+        "id": "vocabulary-food-46-o-2",
+        "text": "杯子"
+      },
+      {
+        "id": "vocabulary-food-46-o-3",
+        "text": "很好吃"
+      },
+      {
+        "id": "vocabulary-food-46-o-4",
+        "text": "很辣"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-46-o-1",
+    "explanation": "「접시」表示「盤子」。例句：접시 두 개 주세요.（請給我兩個盤子。）"
+  },
+  {
+    "id": "vocabulary-food-47",
+    "bank": "vocabulary",
+    "prompt": "「컵」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-47-o-1",
+        "text": "杯子"
+      },
+      {
+        "id": "vocabulary-food-47-o-2",
+        "text": "很好吃"
+      },
+      {
+        "id": "vocabulary-food-47-o-3",
+        "text": "很辣"
+      },
+      {
+        "id": "vocabulary-food-47-o-4",
+        "text": "肚子餓"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-47-o-1",
+    "explanation": "「컵」表示「杯子」。例句：컵에 물이 있어요.（杯子裡有水。）"
+  },
+  {
+    "id": "vocabulary-food-48",
+    "bank": "vocabulary",
+    "prompt": "「맛있어요」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-48-o-1",
+        "text": "很好吃"
+      },
+      {
+        "id": "vocabulary-food-48-o-2",
+        "text": "很辣"
+      },
+      {
+        "id": "vocabulary-food-48-o-3",
+        "text": "肚子餓"
+      },
+      {
+        "id": "vocabulary-food-48-o-4",
+        "text": "菜單（紙本／看板）"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-48-o-1",
+    "explanation": "「맛있어요」表示「很好吃」。例句：이 김치는 맛있어요.（這個泡菜很好吃。）"
+  },
+  {
+    "id": "vocabulary-food-49",
+    "bank": "vocabulary",
+    "prompt": "「매워요」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-49-o-1",
+        "text": "很辣"
+      },
+      {
+        "id": "vocabulary-food-49-o-2",
+        "text": "肚子餓"
+      },
+      {
+        "id": "vocabulary-food-49-o-3",
+        "text": "菜單（紙本／看板）"
+      },
+      {
+        "id": "vocabulary-food-49-o-4",
+        "text": "點餐／訂購"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-49-o-1",
+    "explanation": "「매워요」表示「很辣」。例句：이 음식은 조금 매워요.（這道料理有一點辣。）"
+  },
+  {
+    "id": "vocabulary-food-50",
+    "bank": "vocabulary",
+    "prompt": "「배고파요」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-food-50-o-1",
+        "text": "肚子餓"
+      },
+      {
+        "id": "vocabulary-food-50-o-2",
+        "text": "菜單（紙本／看板）"
+      },
+      {
+        "id": "vocabulary-food-50-o-3",
+        "text": "點餐／訂購"
+      },
+      {
+        "id": "vocabulary-food-50-o-4",
+        "text": "結帳／計算"
+      }
+    ],
+    "correctOptionId": "vocabulary-food-50-o-1",
+    "explanation": "「배고파요」表示「肚子餓」。例句：배고파요. 밥 먹으러 가요.（肚子餓了，去吃飯吧。）"
+  },
+  {
+    "id": "vocabulary-time-41",
+    "bank": "vocabulary",
+    "prompt": "「올해」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-41-o-1",
+        "text": "今年"
+      },
+      {
+        "id": "vocabulary-time-41-o-2",
+        "text": "去年"
+      },
+      {
+        "id": "vocabulary-time-41-o-3",
+        "text": "明年"
+      },
+      {
+        "id": "vocabulary-time-41-o-4",
+        "text": "這個月"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-41-o-1",
+    "explanation": "「올해」表示「今年」。例句：올해 한국에 가요.（今年要去韓國。）"
+  },
+  {
+    "id": "vocabulary-time-42",
+    "bank": "vocabulary",
+    "prompt": "「작년」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-42-o-1",
+        "text": "去年"
+      },
+      {
+        "id": "vocabulary-time-42-o-2",
+        "text": "明年"
+      },
+      {
+        "id": "vocabulary-time-42-o-3",
+        "text": "這個月"
+      },
+      {
+        "id": "vocabulary-time-42-o-4",
+        "text": "下個月"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-42-o-1",
+    "explanation": "「작년」表示「去年」。例句：작년에 한국에 갔어요.（去年去了韓國。）"
+  },
+  {
+    "id": "vocabulary-time-43",
+    "bank": "vocabulary",
+    "prompt": "「내년」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-43-o-1",
+        "text": "明年"
+      },
+      {
+        "id": "vocabulary-time-43-o-2",
+        "text": "這個月"
+      },
+      {
+        "id": "vocabulary-time-43-o-3",
+        "text": "下個月"
+      },
+      {
+        "id": "vocabulary-time-43-o-4",
+        "text": "上週"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-43-o-1",
+    "explanation": "「내년」表示「明年」。例句：내년에 다시 만나요.（明年再見。）"
+  },
+  {
+    "id": "vocabulary-time-44",
+    "bank": "vocabulary",
+    "prompt": "「이번 달」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-44-o-1",
+        "text": "這個月"
+      },
+      {
+        "id": "vocabulary-time-44-o-2",
+        "text": "下個月"
+      },
+      {
+        "id": "vocabulary-time-44-o-3",
+        "text": "上週"
+      },
+      {
+        "id": "vocabulary-time-44-o-4",
+        "text": "平日（週一至週五）"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-44-o-1",
+    "explanation": "「이번 달」表示「這個月」。例句：이번 달에 여행을 가요.（這個月要去旅行。）"
+  },
+  {
+    "id": "vocabulary-time-45",
+    "bank": "vocabulary",
+    "prompt": "「다음 달」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-45-o-1",
+        "text": "下個月"
+      },
+      {
+        "id": "vocabulary-time-45-o-2",
+        "text": "上週"
+      },
+      {
+        "id": "vocabulary-time-45-o-3",
+        "text": "平日（週一至週五）"
+      },
+      {
+        "id": "vocabulary-time-45-o-4",
+        "text": "生日"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-45-o-1",
+    "explanation": "「다음 달」表示「下個月」。例句：다음 달에 시험이 있어요.（下個月有考試。）"
+  },
+  {
+    "id": "vocabulary-time-46",
+    "bank": "vocabulary",
+    "prompt": "「지난주」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-46-o-1",
+        "text": "上週"
+      },
+      {
+        "id": "vocabulary-time-46-o-2",
+        "text": "平日（週一至週五）"
+      },
+      {
+        "id": "vocabulary-time-46-o-3",
+        "text": "生日"
+      },
+      {
+        "id": "vocabulary-time-46-o-4",
+        "text": "約定／約會"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-46-o-1",
+    "explanation": "「지난주」表示「上週」。例句：지난주에 친구를 만났어요.（上週見了朋友。）"
+  },
+  {
+    "id": "vocabulary-time-47",
+    "bank": "vocabulary",
+    "prompt": "「평일」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-47-o-1",
+        "text": "平日（週一至週五）"
+      },
+      {
+        "id": "vocabulary-time-47-o-2",
+        "text": "生日"
+      },
+      {
+        "id": "vocabulary-time-47-o-3",
+        "text": "約定／約會"
+      },
+      {
+        "id": "vocabulary-time-47-o-4",
+        "text": "稍後／以後"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-47-o-1",
+    "explanation": "「평일」表示「平日（週一至週五）」。例句：평일에는 학교에 가요.（平日去上學。）"
+  },
+  {
+    "id": "vocabulary-time-48",
+    "bank": "vocabulary",
+    "prompt": "「생일」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-48-o-1",
+        "text": "生日"
+      },
+      {
+        "id": "vocabulary-time-48-o-2",
+        "text": "約定／約會"
+      },
+      {
+        "id": "vocabulary-time-48-o-3",
+        "text": "稍後／以後"
+      },
+      {
+        "id": "vocabulary-time-48-o-4",
+        "text": "今年"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-48-o-1",
+    "explanation": "「생일」表示「生日」。例句：오늘은 제 생일이에요.（今天是我的生日。）"
+  },
+  {
+    "id": "vocabulary-time-49",
+    "bank": "vocabulary",
+    "prompt": "「약속」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-49-o-1",
+        "text": "約定／約會"
+      },
+      {
+        "id": "vocabulary-time-49-o-2",
+        "text": "稍後／以後"
+      },
+      {
+        "id": "vocabulary-time-49-o-3",
+        "text": "今年"
+      },
+      {
+        "id": "vocabulary-time-49-o-4",
+        "text": "去年"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-49-o-1",
+    "explanation": "「약속」表示「約定／約會」。例句：오후 세 시에 약속이 있어요.（下午三點有約。）"
+  },
+  {
+    "id": "vocabulary-time-50",
+    "bank": "vocabulary",
+    "prompt": "「나중에」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-time-50-o-1",
+        "text": "稍後／以後"
+      },
+      {
+        "id": "vocabulary-time-50-o-2",
+        "text": "今年"
+      },
+      {
+        "id": "vocabulary-time-50-o-3",
+        "text": "去年"
+      },
+      {
+        "id": "vocabulary-time-50-o-4",
+        "text": "明年"
+      }
+    ],
+    "correctOptionId": "vocabulary-time-50-o-1",
+    "explanation": "「나중에」表示「稍後／以後」。例句：나중에 전화할게요.（我稍後會打電話給你。）"
+  },
+  {
+    "id": "vocabulary-travel-41",
+    "bank": "vocabulary",
+    "prompt": "「매표소」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-41-o-1",
+        "text": "售票處"
+      },
+      {
+        "id": "vocabulary-travel-41-o-2",
+        "text": "月台／乘車處"
+      },
+      {
+        "id": "vocabulary-travel-41-o-3",
+        "text": "交通卡"
+      },
+      {
+        "id": "vocabulary-travel-41-o-4",
+        "text": "儲值／充電"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-41-o-1",
+    "explanation": "「매표소」表示「售票處」。例句：매표소가 어디에 있어요?（售票處在哪裡？）"
+  },
+  {
+    "id": "vocabulary-travel-42",
+    "bank": "vocabulary",
+    "prompt": "「승강장」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-42-o-1",
+        "text": "月台／乘車處"
+      },
+      {
+        "id": "vocabulary-travel-42-o-2",
+        "text": "交通卡"
+      },
+      {
+        "id": "vocabulary-travel-42-o-3",
+        "text": "儲值／充電"
+      },
+      {
+        "id": "vocabulary-travel-42-o-4",
+        "text": "來回"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-42-o-1",
+    "explanation": "「승강장」表示「月台／乘車處」。例句：승강장에서 기차를 기다려요.（在月台等火車。）"
+  },
+  {
+    "id": "vocabulary-travel-43",
+    "bank": "vocabulary",
+    "prompt": "「교통카드」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-43-o-1",
+        "text": "交通卡"
+      },
+      {
+        "id": "vocabulary-travel-43-o-2",
+        "text": "儲值／充電"
+      },
+      {
+        "id": "vocabulary-travel-43-o-3",
+        "text": "來回"
+      },
+      {
+        "id": "vocabulary-travel-43-o-4",
+        "text": "單程"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-43-o-1",
+    "explanation": "「교통카드」表示「交通卡」。例句：교통카드를 충전하고 싶어요.（我想儲值交通卡。）"
+  },
+  {
+    "id": "vocabulary-travel-44",
+    "bank": "vocabulary",
+    "prompt": "「충전」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-44-o-1",
+        "text": "儲值／充電"
+      },
+      {
+        "id": "vocabulary-travel-44-o-2",
+        "text": "來回"
+      },
+      {
+        "id": "vocabulary-travel-44-o-3",
+        "text": "單程"
+      },
+      {
+        "id": "vocabulary-travel-44-o-4",
+        "text": "座位"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-44-o-1",
+    "explanation": "「충전」表示「儲值／充電」。例句：교통카드 충전은 어디에서 해요?（交通卡要在哪裡儲值？）"
+  },
+  {
+    "id": "vocabulary-travel-45",
+    "bank": "vocabulary",
+    "prompt": "「왕복」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-45-o-1",
+        "text": "來回"
+      },
+      {
+        "id": "vocabulary-travel-45-o-2",
+        "text": "單程"
+      },
+      {
+        "id": "vocabulary-travel-45-o-3",
+        "text": "座位"
+      },
+      {
+        "id": "vocabulary-travel-45-o-4",
+        "text": "抵達"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-45-o-1",
+    "explanation": "「왕복」表示「來回」。例句：왕복 표 한 장 주세요.（請給我一張來回票。）"
+  },
+  {
+    "id": "vocabulary-travel-46",
+    "bank": "vocabulary",
+    "prompt": "「편도」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-46-o-1",
+        "text": "單程"
+      },
+      {
+        "id": "vocabulary-travel-46-o-2",
+        "text": "座位"
+      },
+      {
+        "id": "vocabulary-travel-46-o-3",
+        "text": "抵達"
+      },
+      {
+        "id": "vocabulary-travel-46-o-4",
+        "text": "出發"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-46-o-1",
+    "explanation": "「편도」表示「單程」。例句：편도 표 한 장 주세요.（請給我一張單程票。）"
+  },
+  {
+    "id": "vocabulary-travel-47",
+    "bank": "vocabulary",
+    "prompt": "「좌석」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-47-o-1",
+        "text": "座位"
+      },
+      {
+        "id": "vocabulary-travel-47-o-2",
+        "text": "抵達"
+      },
+      {
+        "id": "vocabulary-travel-47-o-3",
+        "text": "出發"
+      },
+      {
+        "id": "vocabulary-travel-47-o-4",
+        "text": "觀光"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-47-o-1",
+    "explanation": "「좌석」表示「座位」。例句：제 좌석은 어디예요?（我的座位在哪裡？）"
+  },
+  {
+    "id": "vocabulary-travel-48",
+    "bank": "vocabulary",
+    "prompt": "「도착」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-48-o-1",
+        "text": "抵達"
+      },
+      {
+        "id": "vocabulary-travel-48-o-2",
+        "text": "出發"
+      },
+      {
+        "id": "vocabulary-travel-48-o-3",
+        "text": "觀光"
+      },
+      {
+        "id": "vocabulary-travel-48-o-4",
+        "text": "售票處"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-48-o-1",
+    "explanation": "「도착」表示「抵達」。例句：도착 시간이 언제예요?（抵達時間是什麼時候？）"
+  },
+  {
+    "id": "vocabulary-travel-49",
+    "bank": "vocabulary",
+    "prompt": "「출발」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-49-o-1",
+        "text": "出發"
+      },
+      {
+        "id": "vocabulary-travel-49-o-2",
+        "text": "觀光"
+      },
+      {
+        "id": "vocabulary-travel-49-o-3",
+        "text": "售票處"
+      },
+      {
+        "id": "vocabulary-travel-49-o-4",
+        "text": "月台／乘車處"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-49-o-1",
+    "explanation": "「출발」表示「出發」。例句：출발 시간은 아홉 시예요.（出發時間是九點。）"
+  },
+  {
+    "id": "vocabulary-travel-50",
+    "bank": "vocabulary",
+    "prompt": "「관광」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-travel-50-o-1",
+        "text": "觀光"
+      },
+      {
+        "id": "vocabulary-travel-50-o-2",
+        "text": "售票處"
+      },
+      {
+        "id": "vocabulary-travel-50-o-3",
+        "text": "月台／乘車處"
+      },
+      {
+        "id": "vocabulary-travel-50-o-4",
+        "text": "交通卡"
+      }
+    ],
+    "correctOptionId": "vocabulary-travel-50-o-1",
+    "explanation": "「관광」表示「觀光」。例句：서울에서 관광을 해요.（在首爾觀光。）"
+  },
+  {
+    "id": "vocabulary-daily-41",
+    "bank": "vocabulary",
+    "prompt": "「먹다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-41-o-1",
+        "text": "吃（原形）"
+      },
+      {
+        "id": "vocabulary-daily-41-o-2",
+        "text": "喝（原形）"
+      },
+      {
+        "id": "vocabulary-daily-41-o-3",
+        "text": "去（原形）"
+      },
+      {
+        "id": "vocabulary-daily-41-o-4",
+        "text": "來（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-41-o-1",
+    "explanation": "「먹다」表示「吃（原形）」。例句：아침에 빵을 먹어요.（早上吃麵包。）"
+  },
+  {
+    "id": "vocabulary-daily-42",
+    "bank": "vocabulary",
+    "prompt": "「마시다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-42-o-1",
+        "text": "喝（原形）"
+      },
+      {
+        "id": "vocabulary-daily-42-o-2",
+        "text": "去（原形）"
+      },
+      {
+        "id": "vocabulary-daily-42-o-3",
+        "text": "來（原形）"
+      },
+      {
+        "id": "vocabulary-daily-42-o-4",
+        "text": "看（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-42-o-1",
+    "explanation": "「마시다」表示「喝（原形）」。例句：물을 마셔요.（喝水。）"
+  },
+  {
+    "id": "vocabulary-daily-43",
+    "bank": "vocabulary",
+    "prompt": "「가다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-43-o-1",
+        "text": "去（原形）"
+      },
+      {
+        "id": "vocabulary-daily-43-o-2",
+        "text": "來（原形）"
+      },
+      {
+        "id": "vocabulary-daily-43-o-3",
+        "text": "看（原形）"
+      },
+      {
+        "id": "vocabulary-daily-43-o-4",
+        "text": "聽（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-43-o-1",
+    "explanation": "「가다」表示「去（原形）」。例句：학교에 가요.（去學校。）"
+  },
+  {
+    "id": "vocabulary-daily-44",
+    "bank": "vocabulary",
+    "prompt": "「오다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-44-o-1",
+        "text": "來（原形）"
+      },
+      {
+        "id": "vocabulary-daily-44-o-2",
+        "text": "看（原形）"
+      },
+      {
+        "id": "vocabulary-daily-44-o-3",
+        "text": "聽（原形）"
+      },
+      {
+        "id": "vocabulary-daily-44-o-4",
+        "text": "讀（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-44-o-1",
+    "explanation": "「오다」表示「來（原形）」。例句：친구가 집에 와요.（朋友來家裡。）"
+  },
+  {
+    "id": "vocabulary-daily-45",
+    "bank": "vocabulary",
+    "prompt": "「보다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-45-o-1",
+        "text": "看（原形）"
+      },
+      {
+        "id": "vocabulary-daily-45-o-2",
+        "text": "聽（原形）"
+      },
+      {
+        "id": "vocabulary-daily-45-o-3",
+        "text": "讀（原形）"
+      },
+      {
+        "id": "vocabulary-daily-45-o-4",
+        "text": "寫／使用（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-45-o-1",
+    "explanation": "「보다」表示「看（原形）」。例句：텔레비전을 봐요.（看電視。）"
+  },
+  {
+    "id": "vocabulary-daily-46",
+    "bank": "vocabulary",
+    "prompt": "「듣다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-46-o-1",
+        "text": "聽（原形）"
+      },
+      {
+        "id": "vocabulary-daily-46-o-2",
+        "text": "讀（原形）"
+      },
+      {
+        "id": "vocabulary-daily-46-o-3",
+        "text": "寫／使用（原形）"
+      },
+      {
+        "id": "vocabulary-daily-46-o-4",
+        "text": "睡覺（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-46-o-1",
+    "explanation": "「듣다」表示「聽（原形）」。例句：음악을 들어요.（聽音樂。）"
+  },
+  {
+    "id": "vocabulary-daily-47",
+    "bank": "vocabulary",
+    "prompt": "「읽다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-47-o-1",
+        "text": "讀（原形）"
+      },
+      {
+        "id": "vocabulary-daily-47-o-2",
+        "text": "寫／使用（原形）"
+      },
+      {
+        "id": "vocabulary-daily-47-o-3",
+        "text": "睡覺（原形）"
+      },
+      {
+        "id": "vocabulary-daily-47-o-4",
+        "text": "起床／站起來（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-47-o-1",
+    "explanation": "「읽다」表示「讀（原形）」。例句：책을 읽어요.（讀書。）"
+  },
+  {
+    "id": "vocabulary-daily-48",
+    "bank": "vocabulary",
+    "prompt": "「쓰다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-48-o-1",
+        "text": "寫／使用（原形）"
+      },
+      {
+        "id": "vocabulary-daily-48-o-2",
+        "text": "睡覺（原形）"
+      },
+      {
+        "id": "vocabulary-daily-48-o-3",
+        "text": "起床／站起來（原形）"
+      },
+      {
+        "id": "vocabulary-daily-48-o-4",
+        "text": "吃（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-48-o-1",
+    "explanation": "「쓰다」表示「寫／使用（原形）」。例句：이름을 써 주세요.（請寫下名字。）"
+  },
+  {
+    "id": "vocabulary-daily-49",
+    "bank": "vocabulary",
+    "prompt": "「자다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-49-o-1",
+        "text": "睡覺（原形）"
+      },
+      {
+        "id": "vocabulary-daily-49-o-2",
+        "text": "起床／站起來（原形）"
+      },
+      {
+        "id": "vocabulary-daily-49-o-3",
+        "text": "吃（原形）"
+      },
+      {
+        "id": "vocabulary-daily-49-o-4",
+        "text": "喝（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-49-o-1",
+    "explanation": "「자다」表示「睡覺（原形）」。例句：밤 열한 시에 자요.（晚上十一點睡覺。）"
+  },
+  {
+    "id": "vocabulary-daily-50",
+    "bank": "vocabulary",
+    "prompt": "「일어나다」是什麼意思？",
+    "options": [
+      {
+        "id": "vocabulary-daily-50-o-1",
+        "text": "起床／站起來（原形）"
+      },
+      {
+        "id": "vocabulary-daily-50-o-2",
+        "text": "吃（原形）"
+      },
+      {
+        "id": "vocabulary-daily-50-o-3",
+        "text": "喝（原形）"
+      },
+      {
+        "id": "vocabulary-daily-50-o-4",
+        "text": "去（原形）"
+      }
+    ],
+    "correctOptionId": "vocabulary-daily-50-o-1",
+    "explanation": "「일어나다」表示「起床／站起來（原形）」。例句：아침 일곱 시에 일어나요.（早上七點起床。）"
   }
 ]

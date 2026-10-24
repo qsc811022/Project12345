@@ -42,6 +42,7 @@ export function quizPage(ctx) {
       if (!selectedId || !quiz.submit(selectedId)) return;
       const answer = q.options.find(o => o.id === q.correctOptionId);
       const correct = selectedId === q.correctOptionId;
+      help.textContent = '③ 看完解說，再按下方按鈕繼續。';
       const hp = remainingHp();
       heroHealth.update(hp); health.update(hp);
       damage.hidden = !correct;
@@ -63,13 +64,16 @@ export function quizPage(ctx) {
       submit.replaceWith(next); next.focus();
     });
     submit.disabled = true; submit.classList.add('quiz-submit');
+    const help = el('p', { class: 'quiz-help', role: 'status' }, '① 點選一個答案　② 按「送出答案」確認');
     options.append(...q.options.map((option, index) => el('button', { type: 'button', class: 'quiz-option', 'data-option': option.id, 'aria-pressed': 'false', onClick: event => {
       if (quiz.submitted) return;
       selectedId = option.id;
       options.querySelectorAll('button').forEach(node => node.setAttribute('aria-pressed', String(node.dataset.option === selectedId)));
       event.currentTarget.focus(); submit.disabled = false;
+      help.textContent = '已選好答案，按「送出答案」就能看解說。';
     } }, el('span', { class: 'option-letter', 'aria-hidden': 'true' }, String.fromCharCode(65 + index)), mixedText(option.text))));
     body.replaceChildren(encounter, el('div', { class: 'quiz-header' }, el('span', {}, BANKS[quiz.bank]), el('span', {}, `第 ${quiz.index + 1} 題 / 10`)), progressBar(quiz.index, 10, '作答進度'), questionTitle, options, feedback, submit);
+    options.before(help);
     questionTitle.focus({ preventScroll: true });
     body.scrollIntoView({ behavior: 'instant', block: 'start' });
   }
