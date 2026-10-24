@@ -9,7 +9,7 @@ export function quizPage(ctx) {
   const remainingHp = () => quiz.questions.length - quiz.answers.filter(answer => answer.correct).length;
   const heroHealth = bossHealth();
   const bossLine = el('p', { class: 'boss-dialogue' }, '「準備好了嗎？讓我看看你的韓文實力！」');
-  const intro = hero('BOSS ARENA / 練習競技場', '字母龍的知識考驗', '選擇你的練習領域，用 10 題回顧冒險途中學會的韓文。答錯也沒關係，看完解說再前進。');
+  const intro = hero('學習後的小練習', '10 題韓語小測驗', '先選想練習的主題，再按「開始測驗」。每題選一個答案後按「送出答案」，就能看到解說。答對還能扣掉字母龍一滴血！');
   intro.classList.add('boss-hero');
   const introCopy = el('div', { class: 'boss-copy' }, ...Array.from(intro.childNodes));
   introCopy.append(heroHealth.node);

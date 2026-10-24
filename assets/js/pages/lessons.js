@@ -3,9 +3,9 @@ import { completeControl, vocabularyCard, sentenceCard, grammarCard } from '../c
 import { speakButton, speechNote } from '../speech.js';
 import { wordPractice, wordLibrary } from '../components/word-practice.js';
 const pageInfo = {
-  alphabet: ['HANGUL / THE BEGINNING', '從字母開始，讀懂韓文。', '認識字母、練習組字，再一起跨過收音這一小步。', ['ㄱ ㄴ ㄷ', 'ㅏ ㅓ ㅗ', 'ㄲ ㅘ ㅢ', 'ㅎ + ㅏ + ㄴ', '받침']],
-  vocabulary: ['WORDS / EVERYDAY LIFE', '讓單字，走進生活。', '五個生活主題。讀一個單字、看一句例句，把想複習的字收藏起來。', ['안녕', '밥', '오늘', '여행', '일상']],
-  sentences: ['PHRASES / SMALL CONVERSATIONS', '從一句話，開始對話。', '打招呼、自我介紹、點餐、購物與問路，學會在合適的情境說出口。', ['안녕', '저는', '주세요', '얼마', '어디']]
+  alphabet: ['第一步：認識韓文字母', '韓文字母怎麼讀？', '建議從第一單元開始。先看字形與說明，再按「朗讀」聽發音。讀完單元後，按下「標記為已完成」記錄進度。', ['ㄱ ㄴ ㄷ', 'ㅏ ㅓ ㅗ', 'ㄲ ㅘ ㅢ', 'ㅎ + ㅏ + ㄴ', '받침']],
+  vocabulary: ['第二步：累積生活單字', '選一個主題，開始練單字', '點選下方主題，每次翻卡練習 5 個字。也可以往下搜尋單字，把想複習的內容收藏起來。', ['안녕', '밥', '오늘', '여행', '일상']],
+  sentences: ['把單字用在對話裡', '這些情境，韓文怎麼說？', '選擇打招呼、自我介紹、點餐、購物或問路。每個句型都有中文翻譯、使用情境和朗讀按鈕。', ['안녕', '저는', '주세요', '얼마', '어디']]
 };
 export function lessonPage(ctx, kind, id) {
   const { data, store } = ctx;

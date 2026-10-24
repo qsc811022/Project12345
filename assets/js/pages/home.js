@@ -1,76 +1,67 @@
-﻿import { el, ko, link, heading, progressBar } from '../components/dom.js';
-import { COURSES, courseCard, grammarCard } from '../components/learning.js';
+import { el, ko, link, heading, progressBar } from '../components/dom.js';
 import { bossInvitation, bossPortrait } from '../components/boss.js';
+import { speakButton, speechNote } from '../speech.js';
 
 const REGIONS = [
-  ['alphabet', '字母森林', '가', '認識韓文的第一個音', 'mint'],
-  ['vocabulary', '單字市集', '말', '收集生活裡的常用詞', 'gold'],
-  ['sentences', '對話小鎮', '안녕', '把第一句韓文說出口', 'pink'],
-  ['grammar', '文法圖書館', '책', '發現句子裡的小規則', 'lavender'],
-  ['quiz', '練習競技場', '★', '用 10 題試試你的實力', 'blue']
+  ['alphabet', '韓文字母', '가', '認識子音、母音，練習把字母組成一個字。', 'mint'],
+  ['vocabulary', '生活單字', '말', '從問候、飲食到旅行，每次練習 5 個字。', 'gold'],
+  ['sentences', '日常對話', '안녕', '學會自我介紹、點餐、購物與問路。', 'pink'],
+  ['grammar', '文法解說', '책', '用中文說明句子的規則，搭配韓文例句。', 'lavender'],
+  ['quiz', '10 題小測驗', '★', '選擇練習主題，答完看解說與錯題回顧。', 'blue']
 ];
 
 export function homePage(ctx) {
   const { data, store, lessons } = ctx;
   const state = store.state;
-  const wordCount = data.vocabulary.reduce((total, topic) => total + topic.words.length, 0);
   const completed = state.completedLessonIds.length;
   const next = lessons.find(lesson => !state.completedLessonIds.includes(lesson.id));
   const nextRoute = next ? ctx.routeForId(next.id) : '#/quiz';
+  const wordCount = data.vocabulary.reduce((total, topic) => total + topic.words.length, 0);
   const scores = Object.values(state.quizBestScores);
   const hero = el('section', { class: 'page-hero home-hero' },
     el('div', { class: 'hero-copy' },
-      el('p', { class: 'eyebrow adventure-label' }, '✦ HANGUL ADVENTURE · 韓文冒險島'),
-      el('h1', { class: 'page-title', tabindex: '-1' }, '零基礎也能，', el('br'), el('em', {}, '玩出你的韓文力！')),
-      el('p', { class: 'description' }, '穿過字母森林、逛逛單字市集。每天完成一個小任務，讓韓文成為你的新技能。'),
-      el('div', { class: 'actions' }, link(completed ? next ? '繼續冒險 →' : '前往練習 →' : '開始冒險 →', nextRoute), link('探索地圖 ↓', '#/home', true)),
-      el('p', { class: 'hero-footnote' }, `${lessons.length} 個學習單元 · ${wordCount} 個生活單字 · 依自己的步調探索`)),
-    el('div', { class: 'hero-scene' },
-      el('span', { class: 'scene-word word-one', lang: 'ko' }, '안녕!'),
-      el('img', { class: 'adventure-mascot', src: './assets/images/adventure-mascot.svg', alt: '背著小背包、揮手出發的韓文字母探險夥伴', width: 360, height: 290 }),
-      el('span', { class: 'scene-word word-two' }, '一起出發吧！'),
-      el('span', { class: 'scene-spark spark-one', 'aria-hidden': 'true' }, '✦'),
-      el('span', { class: 'scene-spark spark-two', 'aria-hidden': 'true' }, '✧')));
+      el('p', { class: 'eyebrow adventure-label' }, '給繁體中文使用者的韓語入門練習'),
+      el('h1', { class: 'page-title', tabindex: '-1' }, '零基礎學韓語，', el('br'), el('em', {}, '從「你好」開始。')),
+      el('p', { class: 'description' }, '看中文解說、聽韓文發音，再用翻卡和小測驗練習。從認識字母到生活對話，一步一步學會。'),
+      el('div', { class: 'actions hero-actions' }, link(completed ? next ? '繼續學習下一個單元 →' : '開始複習測驗 →' : '從韓文字母開始 →', nextRoute), el('a', { class: 'text-link', href: '#/home' }, '先看看可以學什麼 ↓')),
+      el('p', { class: 'hero-reassurance' }, '免費學習 · 不用註冊 · 沒有倒數計時'),
+      el('p', { class: 'hero-footnote' }, `${lessons.length} 個學習單元 · ${wordCount} 個生活單字 · 進度保存在目前瀏覽器`)),
+    el('div', { class: 'hero-example' },
+      el('div', { class: 'example-intro' }, el('img', { src: './assets/images/adventure-mascot.svg', alt: '', width: 64, height: 56 }), el('p', {}, '你會這樣學韓文')),
+      el('div', { class: 'hero-example-card' }, el('span', { class: 'badge' }, '第一句問候'), ko('안녕하세요', 'p', { class: 'example-korean' }), el('p', { class: 'example-translation' }, '您好 / 你好'), el('p', { class: 'muted' }, '見面打招呼時使用，是有禮貌的說法。'), speakButton('안녕하세요')),
+      speechNote(), el('p', { class: 'example-caption' }, '看韓文 → 聽發音 → 理解意思 → 動手練習')));
   hero.querySelector('a[href="#/home"]').addEventListener('click', event => {
     event.preventDefault();
     const target = document.getElementById('learning-route');
     target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
     target.querySelector('h2').focus({ preventScroll: true });
   });
-  const hud = el('section', { class: 'player-hud', 'aria-label': '你的冒險紀錄' },
-    el('div', { class: 'player-identity' }, ko('한', 'span', { class: 'player-avatar', 'aria-hidden': 'true' }), el('div', {}, el('strong', {}, completed === lessons.length ? '韓文探索家' : completed ? '成長中的冒險家' : '新手冒險家'), el('span', {}, '每一小步，都算進度'))),
-    el('div', { class: 'stats' }, stat(`${Math.round(completed / lessons.length * 100)}%`, '探索進度'), stat(`${completed} / ${lessons.length}`, '完成單元'), stat(String(state.favoriteWordIds.length), '收藏單字'), stat(scores.length ? `${Math.max(...scores.map(s => s.score))}` : '—', '測驗最高分')));
   const guide = el('section', { class: 'section quick-start', 'aria-labelledby': 'quick-start-title' },
-    el('div', { class: 'section-heading' }, el('p', { class: 'eyebrow' }, '第一次玩？從這裡開始'), el('h2', { class: 'section-title', id: 'quick-start-title' }, '聽一聽、記五字，再來挑戰！'), el('p', { class: 'muted' }, '不用登入，不限時間。完全不認識韓文，可以先從字母森林開始。')),
+    el('div', { class: 'section-heading' }, el('p', { class: 'eyebrow' }, '第一次來，建議這樣學'), el('h2', { class: 'section-title', id: 'quick-start-title' }, '跟著三個步驟，開始你的韓語練習'), el('p', { class: 'muted' }, '從字母開始；已經會讀韓文，也可以直接練單字。')),
     el('ol', { class: 'starter-steps' },
-      el('li', {}, el('span', { class: 'step-number', 'aria-hidden': 'true' }, '01'), el('h3', {}, '先認識韓文字母'), el('p', {}, '看字形、聽發音，學會讀出第一個音。'), link('進入字母森林 →', '#/alphabet', true)),
-      el('li', {}, el('span', { class: 'step-number', 'aria-hidden': 'true' }, '02'), el('h3', {}, '一次只記 5 個字'), el('p', {}, '聽發音 → 想意思 → 翻卡；還不熟的字再練一次。'), link('開始問候單字練習 →', '#/vocabulary/greetings')),
-      el('li', {}, el('span', { class: 'step-number', 'aria-hidden': 'true' }, '03'), el('h3', {}, '用 10 題挑戰字母龍'), el('p', {}, '選答案、按送出。答對扣 1 HP，答錯有解說。'), link('前往練習競技場 →', '#/quiz', true))));
+      el('li', {}, el('span', { class: 'step-number' }, '步驟 1'), el('h3', {}, '先學會讀韓文'), el('p', {}, '認識字母的形狀與聲音，看看它們怎麼組成一個字。'), link('認識韓文字母 →', '#/alphabet', true)),
+      el('li', {}, el('span', { class: 'step-number' }, '步驟 2'), el('h3', {}, '一次練習 5 個單字'), el('p', {}, '先聽發音、想想意思，再翻開中文。還不熟的字可以重練。'), link('開始問候單字練習 →', '#/vocabulary/greetings', true)),
+      el('li', {}, el('span', { class: 'step-number' }, '步驟 3'), el('h3', {}, '用小測驗確認學會了沒'), el('p', {}, '每次 10 題，答完就有解說。答錯也沒關係，可以再試一次。'), link('開始 10 題小測驗 →', '#/quiz', true))));
   const map = el('section', { class: 'section adventure-section', id: 'learning-route' },
-    heading('WORLD MAP / 探索地圖', '下一站，想去哪裡？', '從字母出發，也可以自由選擇想探索的區域。目前所有教材皆可直接進入。'),
+    heading('依照你的需要選擇', '這裡可以學什麼？', '所有教材都能直接開啟。選一個你想學的內容就可以開始。'),
     el('div', { class: 'adventure-board' },
-      el('span', { class: 'map-cloud cloud-one', 'aria-hidden': 'true' }),
-      el('span', { class: 'map-cloud cloud-two', 'aria-hidden': 'true' }),
-      el('div', { class: 'map-trail', 'aria-hidden': 'true' }),
       el('ol', { class: 'map-regions' }, REGIONS.map(([kind, title, icon, description, color], index) => {
         const units = kind === 'quiz' ? [] : data[kind];
         const done = kind === 'grammar' ? state.readGrammarIds.length : units.filter(u => state.completedLessonIds.includes(u.id)).length;
-        const count = kind === 'quiz' ? '每回合 10 題' : `${done} / ${units.length} ${kind === 'grammar' ? '則已讀' : '單元完成'}`;
+        const count = kind === 'quiz' ? '每回 10 題 · 不限時間' : `${done} / ${units.length} ${kind === 'grammar' ? '則已讀' : '單元完成'}`;
         return el('li', { class: `map-region ${color}` }, el('a', { class: 'region-link', href: `#/${kind}` },
-          el('span', { class: 'region-number' }, `AREA 0${index + 1}`),
-          el('span', { class: `region-island${kind === 'quiz' ? ' boss-island' : ''}`, 'aria-hidden': 'true' }, kind === 'quiz' ? bossPortrait() : ko(icon, 'span'), el('span', { class: 'island-tree tree-left' }), el('span', { class: 'island-tree tree-right' })),
-          el('h3', {}, title), el('p', { class: 'region-description' }, description), el('span', { class: 'region-count' }, done && done === units.length ? '✓ 區域探索完成' : count)));
+          el('span', { class: 'region-number' }, kind === 'alphabet' ? '新手建議從這裡開始' : `學習內容 ${index + 1}`),
+          el('span', { class: `region-island${kind === 'quiz' ? ' boss-island' : ''}`, 'aria-hidden': 'true' }, kind === 'quiz' ? bossPortrait() : ko(icon, 'span')),
+          el('h3', {}, title), el('p', { class: 'region-description' }, description), el('span', { class: 'region-count' }, done && done === units.length ? '✓ 已全部完成' : count), el('span', { class: 'region-action' }, '查看內容 →')));
       }))),
-    el('div', { class: 'map-legend' }, el('span', {}, '✦ 自由探索 · 不限時間'), el('a', { href: '#/progress', class: 'text-link' }, '查看冒險紀錄 →')));
+    el('div', { class: 'map-legend' }, el('span', {}, '可以自由選擇主題，也能隨時回來複習。'), el('a', { href: '#/progress', class: 'text-link' }, '查看我的學習進度 →')));
   map.querySelector('h2').tabIndex = -1;
+  const hud = el('section', { class: 'player-hud', 'aria-label': '你的學習紀錄' },
+    el('div', { class: 'player-identity' }, ko('한', 'span', { class: 'player-avatar', 'aria-hidden': 'true' }), el('div', {}, el('strong', {}, completed ? '你已經累積的進步' : '從第一個單元，累積你的進步'), el('span', {}, '讀完單元後，記得按「標記為已完成」'))),
+    el('div', { class: 'stats' }, stat(`${Math.round(completed / lessons.length * 100)}%`, '學習進度'), stat(`${completed} / ${lessons.length}`, '完成單元'), stat(String(state.favoriteWordIds.length), '收藏單字'), stat(scores.length ? `${Math.max(...scores.map(s => s.score))}` : '尚未測驗', '測驗最高分')));
   const mission = el('section', { class: 'section mission-section' },
-    el('div', { class: 'mission-copy' }, el('p', { class: 'eyebrow' }, 'YOUR NEXT QUEST / 下一個任務'), el('h2', { class: 'section-title' }, next ? next.title : '全區探索完成！'), el('p', { class: 'muted' }, next ? '讀一個單元、聽一遍發音，再標記完成。小小的進步，也值得記下來。' : '15 個單元都留下了你的足跡。到競技場練習，或回頭複習喜歡的內容。'), link(next ? '接受學習任務 →' : '挑戰練習測驗 →', nextRoute)),
-    el('div', { class: 'mission-progress' }, el('span', { class: 'quest-icon', 'aria-hidden': 'true' }, '⚑'), el('h3', {}, '你的探索旅程'), progressBar(completed, lessons.length, '學習單元'), el('p', { class: 'muted' }, '讀完教材後，按下「標記為已完成」即可累積。')));
-  const courses = el('section', { class: 'section' }, heading('CHOOSE YOUR QUEST / 學習任務', '把新技能放進背包', '每個區域都有 5 個單元，一次探索一小段。'), el('div', { class: 'grid' }, COURSES.map(course => courseCard(course, data, store))));
-  const showcases = [['alphabet', '字母練習', '認識形狀，聽見每個字母的聲音。'], ['vocabulary', '單字收集', '收藏喜歡的詞，裝進你的單字背包。'], ['sentences', '對話技能', '用完整的句子，和世界打聲招呼。'], ['quiz', '練習競技場', '不限時間的 10 題練習，答完就能看解說。']];
-  const kit = el('section', { class: 'section' }, heading('ADVENTURE KIT / 冒險工具箱', '用你喜歡的方式練習', '聽發音、收單字、練句子，再來一場小測驗。'), el('div', { class: 'grid showcase-grid' }, showcases.map(([path, title, description]) => el('article', { class: 'card showcase-card' }, el('img', { src: `./assets/images/preview-${path}.svg`, alt: `${title}的學習畫面示意`, width: 640, height: 400, loading: 'lazy' }), el('div', { class: 'showcase-body' }, el('h3', {}, title), el('p', {}, description), el('a', { class: 'text-link', href: `#/${path}` }, '前往探索 →'))))));
-  const grammar = el('section', { class: 'section' }, heading('SKILL BOOK / 文法技能書', '多學一招，就多懂一句', '從一個規則、兩個例句開始，慢慢累積你的韓文技能。'), el('div', { class: 'grammar-grid' }, data.grammar.slice(0, 6).map(g => grammarCard(g, store))), el('div', { class: 'lesson-end' }, link(`探索全部 ${data.grammar.length} 則文法 →`, '#/grammar', true)));
-  const coming = el('aside', { class: 'coming-soon' }, el('span', { class: 'coming-icon', 'aria-hidden': 'true' }, '✧'), el('div', {}, el('strong', {}, '下一段冒險：闖關拿密碼'), el('p', {}, '通關獎勵與密碼解鎖規劃中，敬請期待。現在先收集知識，為冒險暖身！')));
-  return { title: '韓文冒險島', nodes: [hero, hud, guide, mission, map, bossInvitation(), courses, kit, grammar, coming] };
+    el('div', { class: 'mission-copy' }, el('p', { class: 'eyebrow' }, completed ? '接著學這個' : '你的第一個學習單元'), el('h2', { class: 'section-title' }, next ? next.title : '你已完成全部學習單元！'), el('p', { class: 'muted' }, next ? '打開教材，先看解說，再聽發音。讀完後按「標記為已完成」，下次回來就知道學到哪裡。' : '到小測驗確認學習成果，也可以回頭複習不熟的內容。'), link(next ? '開啟這個單元 →' : '開始複習測驗 →', nextRoute)),
+    el('div', { class: 'mission-progress' }, el('h3', {}, '已完成的學習單元'), progressBar(completed, lessons.length, '單元完成進度'), el('p', { class: 'muted' }, '進度會自動保存在目前瀏覽器。')));
+  return { title: '零基礎韓語學習', nodes: [hero, ...(completed ? [mission] : []), guide, map, hud, ...(!completed ? [mission] : []), bossInvitation()] };
 }
 export function stat(value, label) { return el('div', { class: 'stat' }, el('strong', {}, value), el('span', {}, label)); }

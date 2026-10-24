@@ -23,9 +23,9 @@ export function bossHealth(initial = 10, max = 10) {
 export function bossInvitation() {
   return el('section', { class: 'section boss-invitation' },
     el('div', { class: 'boss-art' }, el('span', { class: 'boss-orbit', 'aria-hidden': 'true' }), bossPortrait()),
-    el('div', { class: 'boss-copy' }, el('p', { class: 'eyebrow' }, 'BOSS ENCOUNTER / 怪獸登場'),
-      el('h2', { class: 'section-title' }, '字母龍，等你來挑戰！'),
-      el('p', {}, '字母龍有 10 滴血，答對一題就能扣掉 1 滴！帶上剛學會的知識，10 題全答對就能擊敗牠。答錯也能看解說，下回合再挑戰。'),
+    el('div', { class: 'boss-copy' }, el('p', { class: 'eyebrow' }, '學完了，來試試看'),
+      el('h2', { class: 'section-title' }, '用 10 題小測驗，挑戰字母龍'),
+      el('p', {}, '選擇字母、單字或句型題庫，看看自己記住多少。答對一題，字母龍就少一滴血；答錯會顯示正確答案與解說，可以複習後再挑戰。'),
       el('div', { class: 'boss-tags' }, el('span', {}, '♥ 10 滴血'), el('span', {}, '答對 −1 HP'), el('span', {}, '不限時間')),
-      link('前往 BOSS 競技場 →', '#/quiz')));
+      link('選擇測驗主題 →', '#/quiz')));
 }

@@ -1,0 +1,114 @@
+/* Reading order: purpose, next action, learning choices, then progress. */
+body { background: #f5f4f8; background-image: none; color: #292638; }
+.site-header { background: #fff; color: #292638; border-radius: 0; box-shadow: none; border-bottom: 1px solid #e6e1ed; margin-bottom: 0; }
+.site-header .brand-mark { background: #7050b4; border: 0; box-shadow: none; transform: none; }
+.brand small { font-size: .65rem; letter-spacing: .04em; color: #625c70; }
+.site-header .nav-link { font-size: .875rem; }
+.site-header .nav-link:hover, .site-header .nav-link[aria-current="page"] { background: #f0eafa; color: #593497; box-shadow: none; }
+.site-header .menu-toggle { background: #f6f3fb; color: #493369; border-color: #d5cbe4; width: auto; padding: 10px 14px; display: flex; align-items: center; gap: 8px; }
+.menu-toggle span { display: none; }
+.menu-toggle::after { content: '☰ 選單'; font-size: .9rem; font-weight: 650; }
+#main { border-color: #e6e1ed; border-radius: 20px; background: #fff; }
+.section, .reading { background: #fff; }
+.section { padding-block: 44px; }
+.description, .muted { color: #625c70; }
+.page-hero { padding-block: 36px; }
+.eyebrow { font-size: .875rem; letter-spacing: .03em; margin-bottom: 14px; }
+.page-title { font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.45; margin-bottom: 20px; }
+.section-title { font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.5; }
+.button { border-radius: 10px; box-shadow: none; min-height: 48px; font-size: 1rem; border-width: 1px; }
+.button:hover:not(:disabled), .button:active:not(:disabled) { transform: none; box-shadow: none; }
+.button.secondary, .button.secondary:hover:not(:disabled), .button.done, .button.done:hover:not(:disabled) { box-shadow: none; }
+.button.small { min-height: 44px; font-size: .875rem; }
+.text-link { font-size: .95rem; color: #60409d; }
+.card { border-width: 1px; box-shadow: none; border-radius: 16px; }
+.badge { font-size: .8rem; }
+.notice { font-size: .95rem; }
+.progress-caption { font-size: .875rem; }
+.home-hero { grid-template-columns: minmax(0, 1fr); gap: 32px; background: linear-gradient(120deg, #f6f1ff, #fffaf2); padding-block: 40px; }
+.home-hero .page-title { font-size: clamp(1.9rem, 3.5vw, 2.9rem); line-height: 1.5; }
+.adventure-label { background: none; border-radius: 0; padding: 0; font-size: .9rem; color: #62419a; letter-spacing: .02em; }
+.home-hero .description { font-size: 1rem; max-width: 540px; line-height: 1.85; }
+.hero-actions { gap: 12px 22px; }
+.hero-reassurance { font-size: .875rem; color: #4c6456; margin: 20px 0 8px; }
+.home-hero .hero-footnote { font-size: .8rem; margin-top: 0; letter-spacing: 0; }
+.hero-example { min-width: 0; max-width: 380px; width: 100%; margin: auto; }
+.example-intro { display: flex; align-items: center; gap: 12px; padding-left: 12px; }
+.example-intro img { width: 64px; height: 56px; object-fit: contain; }
+.example-intro p { margin: 0; color: #625c70; font-size: .9rem; }
+.hero-example-card { padding: 26px; background: white; border: 1px solid #ded3ee; border-radius: 20px; box-shadow: 0 12px 32px #5140700c; }
+.example-korean { color: #593497; font-size: clamp(1.8rem, 5vw, 2.4rem); font-weight: 750; margin: 20px 0 8px; overflow-wrap: anywhere; }
+.example-translation { font-size: 1.2rem; font-weight: 650; margin-bottom: 12px; }
+.hero-example-card .muted { font-size: .9rem; }
+.example-caption { font-size: .8rem; text-align: center; color: #625c70; margin: 14px 0 0; }
+.quick-start { background: #fff; }
+.starter-steps { gap: 16px; }
+.starter-steps li { padding: 22px; background: #faf9fc; border-color: #e6e1ed; }
+.starter-steps li:nth-child(2) { background: #faf9fc; border-color: #e6e1ed; }
+.step-number { font-size: .875rem; letter-spacing: 0; margin-bottom: 12px; }
+.starter-steps h3 { line-height: 1.5; }
+.starter-steps p { font-size: .95rem; }
+.starter-steps .button { font-size: .875rem; background: #fff; }
+.adventure-section { background: #faf9fc; }
+.adventure-board { background: none; border: 0; padding: 0; border-radius: 0; overflow: visible; }
+.map-regions { display: grid; gap: 16px; min-height: 0; grid-template-columns: minmax(0, 1fr); align-items: stretch; }
+.map-region:nth-child(even) { margin-top: 0; }
+.region-link { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 4px 16px; height: 100%; padding: 22px; text-align: left; background: #fff; border: 1px solid #e0d9ea; border-radius: 16px; }
+.region-link:hover { border-color: #a28ac4; box-shadow: 0 4px 16px #513d7110; }
+.region-number { grid-column: 2; font-size: .75rem; letter-spacing: 0; margin: 0; }
+.region-island { grid-column: 1; grid-row: 1 / 4; align-self: start; width: 48px; height: 48px; border: 0; border-radius: 12px; background: var(--island); box-shadow: none; margin: 0; }
+.region-island > [lang] { font-size: 1.4rem; }
+.region-link:hover .region-island { transform: none; }
+.region-link h3 { grid-column: 2; font-size: 1.1rem; margin: 0; line-height: 1.5; }
+.region-description { display: block; grid-column: 2; font-size: .9rem; margin: 4px 0 10px; line-height: 1.8; color: #625c70; }
+.region-count { grid-column: 2; font-size: .8rem; background: none; padding: 0; margin: 0; color: #625c70; }
+.region-action { grid-column: 2; color: #62419a; font-size: .9rem; font-weight: 650; margin-top: 8px; }
+.boss-island .boss-portrait { width: 44px; max-width: 100%; margin-top: 0; }
+.hero-example .speech-note { font-size: .8rem; line-height: 1.7; color: #625c70; margin: 12px 4px 0; }
+.map-legend { margin-top: 22px; font-size: .875rem; }
+.player-hud { background: #fff; gap: 24px; }
+.player-identity strong { font-size: 1rem; }
+.player-identity div > span { font-size: .875rem; }
+.player-hud .stat span { font-size: .8rem; }
+.player-hud .stat strong { font-size: 1.5rem; }
+.mission-section { background: #f8f5fe; }
+.mission-progress { background: #fff; border: 1px solid #ded3ee; }
+.mission-progress p { font-size: .875rem; }
+.boss-invitation { background: #f5f0fc; color: #292638; border-block: 1px solid #ded3ee; }
+.boss-invitation .boss-art { max-width: 170px; }
+.boss-invitation .boss-orbit { background: #ece1fa; }
+.boss-invitation .boss-copy .eyebrow { color: #62419a; }
+.boss-invitation .boss-copy .section-title { color: #292638; }
+.boss-invitation .boss-copy > p:not(.eyebrow) { color: #625c70; }
+.boss-invitation .boss-tags span { background: #fff; color: #60409d; border-color: #ded3ee; font-size: .85rem; }
+.boss-invitation .boss-copy .button { background: #7050b4; color: #fff; border-color: #59399a; box-shadow: none; }
+.boss-invitation .boss-copy .button:hover { background: #60429f; box-shadow: none; }
+.word-practice { background: #f7f3fe; border: 1px solid #cdbce6; }
+.word-practice .muted { font-size: .95rem; }
+.word-library .vocabulary-card .meaning, .example-block .muted { font-size: .95rem; }
+.filter { box-shadow: none; font-size: .9rem; }
+.filter[aria-pressed="true"] { box-shadow: none; }
+.filter[aria-pressed="true"]:hover { background: #60429f; color: #fff; }
+.lesson-symbol { max-width: 200px; }
+.back-link { display: inline-flex; min-height: 44px; align-items: center; }
+.quiz-bank small { font-size: .85rem; }
+.footer-meta { font-size: .8rem; }
+@media (min-width: 700px) { .map-regions { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) {
+  .site-header .menu-toggle { display: none; }
+  .home-hero { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); gap: 36px; padding-block: 48px; }
+  .map-regions { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .region-link { padding: 20px; gap: 4px 12px; }
+  .boss-invitation { grid-template-columns: 190px minmax(0, 1fr); }
+}
+@media (max-width: 599px) {
+  #main { border-radius: 0; }
+  .home-hero { gap: 24px; }
+  .hero-actions { align-items: stretch; flex-direction: column; }
+  .hero-actions .text-link { align-self: center; }
+  .player-hud .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .player-hud .stat span { font-size: .85rem; }
+  .player-hud .stat strong { font-size: 1.5rem; }
+  .boss-invitation { gap: 16px; }
+  .boss-invitation .boss-art { max-width: 120px; }
+}
